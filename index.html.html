@@ -1,0 +1,1096 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>AMR a Cyklop SF/SP 211 MKB 3D</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#eceee9;--ink:#1d252b;--mute:#5b6870;--panel:#dfe3df;--card:#f7f8f5;--line:#c9cfcb;--floor:#a6aaa6;--amr:#e8680c;--hi:#e9a317;--arch:#9aa4ab;--head:#3d4a52;--box:#c8a671;--box2:#b4905a;--pal:#8a6a40;--strap:#1f5fa8;--ok:#2f8f5b;--btn:#1d252b;--btnink:#f7f8f5;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#14191d;--ink:#e6ebee;--mute:#94a1a9;--panel:#1a2126;--card:#1c2328;--line:#33404a;--floor:#5e6468;--amr:#e8680c;--arch:#a8b2b9;--head:#56646d;--box:#b79660;--box2:#9d7e4c;--pal:#7a5d38;--strap:#4d93e0;--ok:#4cc38a;--btn:#e6ebee;--btnink:#14191d;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#14191d;--ink:#e6ebee;--mute:#94a1a9;--panel:#1a2126;--card:#1c2328;--line:#33404a;--floor:#5e6468;--amr:#e8680c;--arch:#a8b2b9;--head:#56646d;--box:#b79660;--box2:#9d7e4c;--pal:#7a5d38;--strap:#4d93e0;--ok:#4cc38a;--btn:#e6ebee;--btnink:#14191d;color-scheme:dark}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--bg);color:var(--ink);font-family:'Barlow',system-ui,-apple-system,'Segoe UI',Arial,sans-serif;line-height:1.45}
+main{max-width:1040px;margin:0 auto;padding:20px 16px 32px}
+h1{font-size:clamp(1.5rem,4vw,2.1rem);margin:0 0 4px;font-weight:700;letter-spacing:-.01em}
+.sub{color:var(--mute);margin:0 0 16px;max-width:72ch}
+.stage{position:relative;background:var(--panel);border:1px solid var(--line);border-radius:10px;overflow:hidden;aspect-ratio:16/9;min-height:300px}
+@media (max-width:560px){.stage{aspect-ratio:auto;height:320px;min-height:0}.stage.m2d{height:560px}}
+#cv,#cv2{position:absolute;inset:0;width:100%;height:100%;display:block;touch-action:none}
+#cv2{display:none}
+.hint{position:absolute;left:12px;bottom:10px;font-size:.8rem;color:var(--mute);pointer-events:none}
+.bar{height:4px;background:var(--line)}
+.bar i{display:block;height:100%;width:0;background:var(--hi)}
+.row{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:14px 0}
+.env{gap:6px 16px;margin-top:-4px;color:var(--mute);font-size:.9rem}
+.env input{width:18px;height:18px;accent-color:var(--hi);margin:0}
+.env button{padding:5px 12px;font-size:.88rem}
+button,select{font:inherit;font-size:.95rem;padding:8px 16px;border-radius:6px;border:1px solid var(--line);background:var(--card);color:var(--ink);cursor:pointer}
+button.main{background:var(--btn);color:var(--btnink);border-color:var(--btn);font-weight:600;min-width:110px}
+button:focus-visible,select:focus-visible{outline:3px solid var(--hi);outline-offset:2px}
+label{color:var(--mute);font-size:.9rem;display:flex;gap:6px;align-items:center;min-width:0;max-width:100%}
+select{min-width:0;max-width:100%;text-overflow:ellipsis}
+.info{display:grid;grid-template-columns:1fr auto;gap:12px 24px;align-items:start}
+@media (max-width:700px){.info{grid-template-columns:1fr}}
+#now b{display:block;font-size:1.2rem}
+#now span{color:var(--mute)}
+.stats{display:flex;flex-wrap:wrap;gap:20px;font-variant-numeric:tabular-nums}
+.stats div{min-width:92px}
+.stats small{display:block;color:var(--mute)}
+.stats strong{font-size:1.3rem}
+ol{list-style:none;margin:14px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:6px}
+li{padding:4px 11px;border:1px solid var(--line);border-radius:99px;font-size:.88rem;color:var(--mute)}
+li.on{background:var(--hi);border-color:var(--hi);color:#1d252b;font-weight:600}
+li.done{color:var(--ok);border-color:var(--ok)}
+.spec{margin:16px 0 0;padding-top:12px;border-top:1px solid var(--line);color:var(--mute);font-size:.88rem}
+</style>
+</head>
+<body>
+<main>
+<h1>AMR a páskovací stroj Cyklop SF/SP 211 MKB v sklade</h1>
+<p class="sub">Sklad je 3D rekonštrukcia podľa pôdorysu prevádzky: pôvodnú dopravníkovú linku nahrádza samostatne stojaci stroj, cez ktorý AMR prejde zľava doprava po osi pôvodnej linky. Zvislá paskovačka má dve hlavy hore a lyžiny pre palety. Vozík s oboma hlavami zíde k nákladu, hlavy podajú dve pásky naraz a dve lyžiny ich ťahajú otvormi palety. Typ A: jeden cyklus. Typ B: po prvom páre sa AMR otočí o 90°, hlavy sa prestavia na inú rozteč a stroj aplikuje druhý pár. Pred vstupom do stroja kamera hľadá QR kód na vrchu palety. Kód majú len palety, kde zákazník požaduje páskovanie 2+2. Bez kódu stroj páskuje dvoma páskami. Podľa QR kódu stroj vie, koľkokrát má páskovať. Paleta stojí na skejte: oceľový rám so štyrmi nohami a kolieskami, pod ktorý AMR vojde a ktorý vezie.</p>
+
+<div class="stage"><canvas id="cv"></canvas><canvas id="cv2"></canvas><div class="hint" id="hint">Ťahaj: otočiť · koliesko: priblížiť</div></div>
+<div class="bar"><i id="bar"></i></div>
+
+<div class="row">
+<button class="main" id="go">Štart</button>
+<button id="rs">Znova</button>
+<label>Typ palety <select id="n"><option value="2" selected>Typ A: 2 pásky naraz (bez QR)</option><option value="4">Typ B: 2 + 2 pásky, otočenie 90° (s QR)</option></select></label>
+<label>Rýchlosť <select id="spd"><option value="0.5">0,5×</option><option value="1" selected>1×</option><option value="2">2×</option></select></label>
+<label>Pohľad <select id="cam"><option value="free">Páskovacie pracovisko</option><option value="machine">Detail stroja</option><option value="side">Bočný pohľad</option><option value="front">Z osi prejazdu</option><option value="top">Pracovisko zhora</option><option value="follow">Sledovanie AMR</option><option value="whole">Celý sklad</option><option value="plan">Pôdorys skladu</option><option value="user">Voľná kamera</option><option value="2d">2D schéma</option></select></label>
+</div>
+<div class="row env" id="envRow">
+<span>Prostredie</span>
+<label><input type="checkbox" id="eStore" checked> Sklad</label>
+<label><input type="checkbox" id="eWalls" checked> Steny</label>
+<label><input type="checkbox" id="eRoof" checked> Strop</label>
+<label><input type="checkbox" id="eRoute" checked> Trasa AMR</label>
+<button id="eCell">Iba pracovisko</button>
+<button id="eAll">Celý sklad</button>
+</div>
+
+<div class="info">
+<div id="now"><b>Pripravené</b><span>Stlač Štart a AMR vojde do paskovacej stanice.</span></div>
+<div class="stats">
+<div><small>Pásky</small><strong id="cnt">0 / 2</strong></div>
+<div><small>QR kód</small><strong id="qr">—</strong></div>
+<div><small>Rozteč hláv</small><strong id="spc">250 mm</strong></div>
+<div><small>Sila napnutia</small><strong id="ten">0 N</strong></div>
+</div>
+</div>
+<ol id="chips"></ol>
+<p class="spec">Stroj podľa brožúry Cyklop (rad SF/SP 111 M, varianta SP 211 MKB s dvoma hlavami): pevná hlava hore, balík 800 až 1 200 mm (šírka) a 400 až 2 100 mm (výška), pásky PP a PET, napnutie do 5 500 N (hlava CFH1), rýchlosť vozíka 170 mm/s, rýchlosť lyžiny 700 mm/s, riadenie Siemens S7-300. Skejt a AMR podľa výkresu DOS1654-KMP600P (KMP 600P-E(U)-D): dĺžka AMR 981 mm, rám skejtu 600 × 960 mm (800 + 2 × 80), nohy 80 mm vysoké 242 mm, kolieska 107 mm, celková šírka s kolieskami 1 015 mm. Šírka AMR 606 mm je odvodená (800 − 2 × 97), výška AMR 250 mm je odmeraná z výkresu. Paleta 800 × 600 mm leží 800 mm stranou naprieč AMR, jej spodok je 379 mm nad podlahou. Odhadnuté sú: vzhľad AMR, vnútorné výstuhy rámu, priradenie kót 30, 55 a 6 mm, konštrukcia palety, krabice (300 × 400 × 300 mm, 3 vrstvy), rozmery stroja, rozteč hláv (250 a 350 mm, simulačné parametre) a sila napnutia. 3D model stroja je konštrukčný odhad podľa fotografií a videa výrobcu, nie presná replika. Sken QR je animácia podľa zvoleného typu palety, nie skutočné čítanie kódu. Sklad: rozloženie je prekreslené z pôdorysu, mierka je odhad z popisu regálu (pole 2 700 mm), takže výrez má asi 49 × 31 m. Odhadnuté sú výška haly 8 m, výška a úrovne regálov, typ skladovania v hornej a pravej časti (plošné uličky, policové regály, blok paliet), oplotenie pracoviska, názvy radov, strešná konštrukcia a náklad na pozíciách. Smer prejazdu AMR, poloha pracoviska, rozmery skladu a regálových radov sú v konfigurácii na začiatku skriptu (objekt WH). Dvere v severnej stene sú umiestnené podľa prerušení steny na výkrese, ich typ je odhad. Stena je len na severe podľa výkresu. Na západe, juhu a východe je výkres orezaný, preto tam steny nie sú, a dvojitá čiara vpravo od pracoviska je len značenie na podlahe.</p>
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/build/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+<script>
+(function(){
+var $=function(i){return document.getElementById(i)};
+var cs=function(v){return getComputedStyle(document.documentElement).getPropertyValue(v).trim()||'#888'};
+var cv=$('cv'),cv2=$('cv2'),stage=cv.parentNode;
+
+// rozmery (m), spoločné pre 3D aj 2D
+var ZW=.95,H=3.5,BASE=1.05;
+// ── konfigurácia mobilnej zostavy (m). [V] = kóta z výkresu DOS1654-KMP600P, [O] = odhad ──
+var CFG={
+ amr:{L:.981,                // [V] dĺžka 981
+      W:.606,                // [V] odvodené: 800 − 2 × 97 (medzera noha – AMR)
+      H:.25},                // [O] odmerané z výkresu v mierke, nie je kótované
+ skate:{frameX:.6,           // [V] rám v smere jazdy 600
+        inner:.8,            // [V] pôvodná šírka rámu 800
+        frameZ:.96,          // [V] 800 + 2 × 80 (rozšírenie pre nohy)
+        beam:.08,leg:.08,    // [V] 80
+        legH:.242,           // [V] noha 242
+        casterH:.107,        // [V] koliesko 107 (typ 423-PUB-G075p)
+        wheelD:.075,         // [O] priemer podľa označenia G075
+        prof:.03,            // [V] výška profilu rámu 30 (priradenie kóty je odhad)
+        hub:.055,            // [V] 55, chápané ako uchytenie pod rámom (odhad priradenia)
+        pad:.006},           // [V] 6, chápané ako doraz palety v rohoch (odhad priradenia)
+ pallet:{X:.6,Z:.8,          // 800 × 600, 800 naprieč AMR (podľa uloženia rámu na výkrese)
+         board:.02,block:.08,blockW:.1},                    // [O]
+ load:{bx:.3,bz:.4,bh:.3,layers:3,gap:.004,sheet:.003},    // [O]
+ strapBottom:.061,           // výška spodnej časti pásky nad spodkom palety
+ lanceY:.045                 // os lyžiny nad spodkom palety (otvor palety 20 až 100 mm)
+};
+// ── konfigurácia skladu podľa pôdorysu: polohy v px výkresu, prepočet mierkou WH.s. [O] = odhad ──
+var WH={
+ s:2.7/51,               // m na px [O]: z popisu regálu „2700 × 1100 mm“, pole regálu ≈ 51 px
+ ox:352,oy:243,          // px poloha stredu pôvodnej páskovacej linky = počiatok scény (stroj)
+ ext:[-4,20,931,602],    // hranice výrezu pôdorysu (px); stena je len na severe
+ hallH:8,                // svetlá výška haly [O]
+ grid:92,                // rozstup fasádnych stĺpov (px)
+ mainCols:[[362,27],[730,27],[362,395],[730,395]],      // hlavné stĺpy na osiach 4 a 5
+ doors:[[54,74],[445,460]],                             // prerušenia severnej steny (px) = dvere [O]
+ rack:{px0:1,bays:9,bay:2.7,depth:1.1,H:6,levels:[0,1.7,3.25,4.8]},   // výška a úrovne [O]
+ rackRows:[[305.5],[366.5,391],[451.5,476.5],[535,560.5]],             // stredy radov (py): 1 jednoduchý + 3 dvojité
+ cell:[166,155,508,284], // ohraničenie páskovacieho pracoviska (px)
+ gate:1.1,               // polovica šírky prejazdu AMR v oplotení (m) [O]
+ start:-14,end:9.68,     // ľavý koniec trasy (ulička vľavo) a pravý koniec (stred uličky vpravo, px 535), m
+ dir:1,                  // smer prejazdu po osi pôvodnej linky: 1 = zľava doprava, -1 = sprava doľava
+ qr:2.6                  // vzdialenosť kontroly QR pred strojom (m) [O]
+};
+var DIR=WH.dir<0?-1:1,CX=-WH.qr*DIR,XIN=DIR>0?WH.start:WH.end,XOUT=DIR>0?WH.end:WH.start,RB=DIR>0?0:Math.PI;
+var FT=CFG.skate.casterH+CFG.skate.legH+CFG.skate.prof;      // vrch rámu skejtu = spodok palety (0,379)
+var LIFT=FT-CFG.skate.prof-CFG.skate.hub-CFG.amr.H;          // zdvih AMR pod skejtom
+var PB=FT,PH=3*CFG.pallet.board+CFG.pallet.block,LH=CFG.load.layers*CFG.load.bh+CFG.load.sheet;
+var Y0=PB+CFG.strapBottom,Y1=PB+PH+LH+.01,LY=PB+CFG.lanceY;
+var HCD=Y1+.24,HCU=HCD+.3;   // výška hláv pri páskovaní a v hornej polohe
+var CH=.57; // polovičná šírka vodiacej dráhy pásky pri hlave (m)
+
+// ───────────── logika cyklu (nezávislá od vykresľovania) ─────────────
+var STEPS=['Príjazd','Sken QR','Dokovanie','Podanie pások','Napnutie','Uzatvorenie a strih','Otočenie 90°','Odchod'];
+var TXT={approach:['Príjazd','AMR s paletou prichádza uličkou '+(DIR>0?'zľava':'sprava')+' a vchádza do páskovacieho pracoviska.'],dock:['Dokovanie','Senzor kontroluje polohu nákladu, vozík s hlavami zíde k nákladu a lyžiny sa zasunú do otvorov palety zo strany kotúčov.'],feed:['Podanie pások','Obe hlavy podávajú pásky a lyžiny ich ťahajú otvormi palety na druhú stranu.'],tension:['Napnutie','Lyžiny sa vysunú späť a pásky sa stiahnu na náklad.'],seal:['Uzatvorenie a strih','Hlavy pásky uzavrú a odstrihnú, potom sa vozík zdvihne.'],scan:['Sken QR kódu','Kamera pred vstupom hľadá QR kód na vrchu palety. Kód majú len palety s požiadavkou 2+2.'],enter:['Vjazd do stroja','Stroj nastaví počet pások podľa QR kódu (bez kódu 2 pásky) a AMR vojde pod oblúk.'],rotate:['Otočenie 90°','AMR sa otočí na mieste a hlavy sa prestavia na rozteč 350 mm.'],leave:['Odchod','Zabalená paleta odchádza '+(DIR>0?'doprava':'doľava')+' do manipulačnej uličky.'],done:['Hotovo','Náklad je zapaskovaný a AMR pokračuje v úlohe.']};
+var CHIP={approach:0,enter:0,scan:1,dock:2,feed:3,tension:4,seal:5,rotate:6,leave:7,done:8};
+// polovica rozteče hláv: A = 125 mm, B = 175 mm (medzery medzi blokmi palety); simulačné parametre
+var STR={2:[['A',.125]],4:[['A',.125],['B',.175]]};
+// polovičná šírka slučky: A okolo strany 800, B okolo strany 600
+var W0={A:CFG.pallet.Z/2+.01,B:CFG.pallet.X/2+.01};
+var segs=[],total=0,rels=[],t=0,playing=false,last=0,lastKey=-1,ST=null;
+function sm(p){p=Math.max(0,Math.min(1,p));return p*p*(3-2*p)}
+
+function build(){
+ var n=+$('n').value;rels=STR[n];segs=[];var rot=0,Q=Math.PI/2,SP0=2*rels[0][1],sp=SP0;
+ rels.forEach(function(q,k){
+  var md=q[0],h=q[1];
+  if(md==='A'){segs.push({ty:'approach',d:5.5,a:XIN,b:CX,r0:0,r1:0,s0:sp,s1:sp,k:k},{ty:'scan',d:1.8,a:CX,b:CX,r0:0,r1:0,s0:sp,s1:sp,k:k},{ty:'enter',d:1.6,a:CX,b:0,r0:0,r1:0,s0:sp,s1:sp,k:k})}
+  else{segs.push({ty:'rotate',d:2.2,a:0,b:0,r0:0,r1:Q,s0:sp,s1:2*h,k:k});rot=Q;sp=2*h}
+  [['dock',1.8],['feed',3],['tension',1.3],['seal',2.4]].forEach(function(z){segs.push({ty:z[0],d:z[1],a:0,b:0,r0:rot,r1:rot,s0:sp,s1:sp,k:k,md:md})});
+ });
+ if(rot)segs.push({ty:'rotate',d:2.2,a:0,b:0,r0:rot,r1:0,s0:sp,s1:SP0,k:rels.length-1,back:1});
+ segs.push({ty:'leave',d:4.6,a:0,b:XOUT,r0:0,r1:0,s0:SP0,s1:SP0,k:rels.length-1});
+ total=0;segs.forEach(function(s){s.s=total;total+=s.d;s.e=total});
+ if(V3)V3.rebuild(rels,n);
+}
+
+// stav simulácie v čase t: z neho kreslí 3D aj 2D
+function compute(){
+ var tt=Math.min(t,total),seg=segs[segs.length-1],i;
+ for(i=0;i<segs.length;i++){if(tt<segs[i].e){seg=segs[i];break}}
+ var fin=t>=total,p=fin?1:(tt-seg.s)/seg.d,ty=seg.ty,e=sm(p);
+ var st={tt:tt,seg:seg,i:i,fin:fin,p:p,ty:ty,e:e,md:seg.md};
+ st.ax=seg.a+(seg.b-seg.a)*e;
+ st.ar=RB+seg.r0+(seg.r1-seg.r0)*e;
+ var sp=seg.s0+(seg.s1-seg.s0)*e;st.sp=sp;st.xs=[sp/2,-sp/2];
+ var sN=0;segs.forEach(function(s){if(s.ty==='seal'&&tt>=s.e)sN++});st.sN=sN;
+ var on=(ty==='feed'||ty==='tension'||ty==='seal')&&!fin&&!(ty==='seal'&&p>=1);
+ var wS=W0[seg.md]||W0.A,ins=.14,insW=0,off=0,ten=0,fo=0,fs=0,h=0;
+ if(!fin){
+  if(ty==='dock')h=sm(p);
+  else if(ty==='feed'||ty==='tension')h=1;
+  else if(ty==='seal')h=p<.25?1:1-sm((p-.25)/.75);
+ }
+ if(on){
+  if(ty==='feed'){off=sm(p);insW=CH-wS}
+  // napínanie: páska najprv priľahne z bokov, potom zhora
+  else if(ty==='tension'){off=1;insW=(CH-wS)*(1-sm(p/.7));ins=.14*(1-sm((p-.25)/.75));ten=2500*sm(p)}
+  else{off=1;ins=0;ten=2500;fo=Math.max(0,1-p*4);fs=1+Math.min(p*4,1)*3}
+ }
+ st.on=on;st.ins=ins;st.insW=insW;st.off=off;st.ten=ten;st.fo=fo;st.fs=fs;st.h=h;
+ st.hc=HCU+(HCD-HCU)*h;
+ st.scanOp=(ty==='dock'&&!fin)?.15+.2*Math.abs(Math.sin(p*9)):0;
+ st.coneOp=(ty==='scan'&&!fin)?.1+.12*Math.abs(Math.sin(p*16)):0;
+ var w2=CH,tip=BASE;
+ st.w0=wS;
+ if(!fin){
+  if(ty==='dock')tip=BASE+(w2-BASE)*e;
+  else if(ty==='feed'){
+   var L0=w2,L1=Y1+.14-Y0,L2=2*w2,TT=2*L0+2*L1+L2;
+   var fb=Math.max(0,Math.min(1,(e*TT-L0-L1)/L2));
+   tip=w2-2*w2*fb;
+  }else if(ty==='tension')tip=-w2+(BASE+w2)*sm(p*2.2);
+ }
+ st.tip=tip;
+ st.vis=!fin&&(BASE-tip)>.03&&(ty==='dock'||ty==='feed'||ty==='tension');
+ return st;
+}
+function chips(cur){var h='';STEPS.forEach(function(s,i){h+='<li class="'+(i===cur?'on':(i<cur?'done':''))+'">'+s+'</li>'});$('chips').innerHTML=h}
+function ui(st){
+ var sg=segs.filter(function(s){return s.ty==='scan'})[0],tt=st.tt,fin=st.fin;
+ $('qr').textContent=tt<sg.s?'—':(tt<sg.e?'sken…':($('n').value==='2'?'nenájdený':'2+2'));
+ $('ten').textContent=Math.round(st.ten)+' N';
+ $('spc').textContent=Math.round(st.sp*1000)+' mm';
+ $('bar').style.width=(100*Math.min(1,tt/total))+'%';
+ var key=fin?-2:st.i;
+ if(key!==lastKey){
+  lastKey=key;var d=TXT[fin?'done':st.ty];
+  if(st.seg.back&&!fin)d=['Otočenie späť','AMR sa vráti do pôvodnej orientácie a hlavy na rozteč 250 mm.'];
+  $('now').innerHTML='<b>'+d[0]+'</b><span>'+d[1]+'</span>';
+  chips(CHIP[fin?'done':st.ty]);
+ }
+ $('cnt').textContent=(fin?rels.length*2:Math.min((st.sN+(st.on?1:0))*2,rels.length*2))+' / '+(tt<sg.e?'?':rels.length*2);
+}
+function render(){
+ var st=compute();ST=st;
+ if(V3)V3.apply(st);
+ ui(st);
+}
+
+// ───────────── 3D (Three.js / WebGL); ak nejde, V3 = null a ostane 2D ─────────────
+function init3D(){
+ if(typeof THREE==='undefined'||!THREE.OrbitControls)throw new Error('Three.js sa nenačítal');
+ var R=new THREE.WebGLRenderer({canvas:cv,antialias:true}); // bez WebGL tu vyhodí chybu
+ R.shadowMap.enabled=true;R.shadowMap.type=THREE.PCFSoftShadowMap;R.setPixelRatio(Math.min(devicePixelRatio,2));
+ var S=new THREE.Scene(),cam=new THREE.PerspectiveCamera(40,16/9,.15,300);
+ var ctl=new THREE.OrbitControls(cam,cv);ctl.enableDamping=true;ctl.maxPolarAngle=Math.PI*.495;ctl.minDistance=1.2;ctl.maxDistance=140;
+ // osvetlenie: obloha + hlavné svetlo s mäkkým tieňom + slabé protisvetlo
+ S.add(new THREE.HemisphereLight(0xffffff,0x6f7880,.7));
+ var sun=new THREE.DirectionalLight(0xffffff,.85);sun.position.set(4,9,5);sun.castShadow=true;
+ sun.shadow.mapSize.set(2048,2048);var sc=sun.shadow.camera;sc.left=-6;sc.right=6;sc.top=6;sc.bottom=-6;sc.far=30;
+ sun.shadow.bias=-.0004;sun.shadow.normalBias=.02;S.add(sun);
+ var fill=new THREE.DirectionalLight(0xdfe8f0,.3);fill.position.set(-5,4,-6);S.add(fill);
+
+ var M={};
+ function mat(k,c,o){var m=new THREE.MeshStandardMaterial(Object.assign({color:c,roughness:.6,metalness:.1},o||{}));M[k]=m;return m}
+ function colors(){
+  ['floor','amr','arch','head','pal','strap','box','box2'].forEach(function(k){M[k].color.set(cs('--'+k))});
+  M.pal2.color.set(cs('--pal')).multiplyScalar(.82);M.box3.color.set(cs('--box')).multiplyScalar(.9);
+  S.background=new THREE.Color(cs('--panel'));
+ }
+ mat('floor',0);mat('amr',0,{roughness:.45});mat('arch',0,{metalness:.35});mat('head',0);mat('pal',0);mat('strap',0,{roughness:.35});mat('box',0,{roughness:.9});mat('box2',0,{roughness:.9});
+ mat('hi',0xe9a317);mat('dark',0x20262a,{roughness:.5});mat('grey',0x4a545b);mat('white',0xeef1f3);mat('ok',0x2fd08a,{emissive:0x1a8a57});mat('red',0xc9302c);
+ // priemyselné materiály stroja
+ mat('steel',0x8b959c,{metalness:.75,roughness:.35});   // oceľ
+ mat('alu',0xc5ccd1,{metalness:.65,roughness:.3});      // hliník
+ mat('blue',0x1f3f8c,{metalness:.25,roughness:.5});     // tmavomodrá konštrukcia
+ mat('cover',0xdde2e5,{metalness:.1,roughness:.55});    // svetlosivé kryty
+ mat('motor',0x2f6db5,{metalness:.3,roughness:.45});    // elektromotory
+ mat('rubber',0x15191c,{roughness:.9});
+ mat('screen',0x10202c,{emissive:0x2a7fd0,emissiveIntensity:.6,roughness:.3});
+ mat('lampG',0x2fd08a,{emissive:0x2fd08a,emissiveIntensity:1});
+ mat('lampA',0xe9a317,{emissive:0xe9a317,emissiveIntensity:.05});
+ mat('lampR',0xc9302c,{emissive:0xc9302c,emissiveIntensity:.05});
+
+ function grp(n,p){var g=new THREE.Group();g.name=n;(p||S).add(g);return g}
+ function box(w,h,d,m,x,y,z,p){var o=new THREE.Mesh(new THREE.BoxGeometry(w,h,d),m);o.position.set(x,y,z);o.castShadow=o.receiveShadow=true;(p||S).add(o);return o}
+ // valec s osou 'x', 'y' alebo 'z'
+ function cyl(r,h,m,x,y,z,ax,p,seg){
+  var o=new THREE.Mesh(new THREE.CylinderGeometry(r,r,h,seg||18),m);
+  if(ax==='x')o.rotation.z=Math.PI/2;else if(ax==='z')o.rotation.x=Math.PI/2;
+  o.position.set(x,y,z);o.castShadow=o.receiveShadow=true;(p||S).add(o);return o}
+ var boltG=new THREE.CylinderGeometry(.013,.013,.014,8);
+ function bolt(x,y,z,ax,p){var o=new THREE.Mesh(boltG,M.steel);if(ax==='x')o.rotation.z=Math.PI/2;else if(ax==='z')o.rotation.x=Math.PI/2;o.position.set(x,y,z);(p||S).add(o);return o}
+
+
+ // ══════════ NOSNÁ KONŠTRUKCIA (portál v rovine x = 0) ══════════
+ var frame=grp('frame');
+ [-1,1].forEach(function(b){
+  var zc=b*ZW;
+  box(.46,.02,.34,M.blue,0,.01,zc+b*.04,frame);                                   // kotviaca doska
+  [[-.19,-.13],[.19,-.13],[-.19,.13],[.19,.13]].forEach(function(q){bolt(q[0],.027,zc+b*.04+q[1],'y',frame)}); // kotvy
+  box(.17,.06,.17,M.blue,0,.05,zc,frame);                                          // pätka stĺpa
+  box(.12,H-.236,.12,M.blue,0,.02+(H-.236)/2,zc,frame);                            // stĺp (uzavretý profil 120 × 120)
+  [-1,1].forEach(function(sx){var g=box(.2,.012,.05,M.blue,sx*.125,.14,zc,frame);g.rotation.z=-sx*.98}); // vzpery pätky
+  box(.035,H-.5,.02,M.alu,0,.25+(H-.5)/2,zc-b*.07,frame);                          // lineárne vedenie vozíka
+  box(.08,H-.45,.03,M.cover,0,.22+(H-.45)/2,zc+b*.075,frame);                      // kryt pohonu a káblov
+  box(.2,.016,.2,M.steel,0,H-.208,zc,frame);                                       // príruba stĺp – nosník
+  [[-.08,-.08],[.08,-.08],[-.08,.08],[.08,.08]].forEach(function(q){bolt(q[0],H-.223,zc+q[1],'y',frame)});
+  [-1,1].forEach(function(sx){var g=box(.012,.424,.05,M.blue,sx*.066,H-.35,zc-b*.21,frame);g.rotation.x=-b*Math.PI/4}); // rohové vzpery
+  box(.1,.14,.1,M.cover,0,H-.3,b*(ZW-.11),frame);                                  // kryt reťazového kolesa zdvihu
+  box(.17,.21,.012,M.steel,0,H-.1,b*(ZW+.106),frame);                              // čelo horného nosníka
+  // núdzový STOP na stĺpe (strana príjazdu)
+  box(.06,.09,.07,M.hi,-.09*DIR,1.2,zc,frame);cyl(.024,.028,M.red,-.134*DIR,1.2,zc,'x',frame);
+ });
+ box(.16,.2,2*ZW+.2,M.blue,0,H-.1,0,frame);                                        // horný priečny nosník
+ [-1,1].forEach(function(sx){                                                      // styková platňa so skrutkami
+  box(.008,.14,.3,M.steel,sx*.084,H-.1,0,frame);
+  [[-.1,-.04],[.1,-.04],[-.1,.04],[.1,.04]].forEach(function(q){bolt(sx*.092,H-.1+q[1],q[0],'x',frame)});
+ });
+ box(.1,.04,2*ZW,M.cover,0,H+.02,0,frame);                                         // káblový žľab na nosníku
+ // pohon zdvihu: prevodovka, motor, priebežný hriadeľ
+ box(.16,.02,.2,M.steel,0,H-.21,0,frame);
+ box(.14,.16,.16,M.steel,0,H-.3,0,frame);
+ cyl(.065,.24,M.motor,.19,H-.3,0,'x',frame,20);cyl(.07,.05,M.dark,.335,H-.3,0,'x',frame,20);
+ box(.08,.05,.07,M.dark,.19,H-.215,0,frame);
+ cyl(.018,2*ZW-.24,M.steel,0,H-.3,0,'z',frame,10);
+ // snímač polohy nákladu (reflexná závora) na stĺpoch
+ box(.035,.06,.045,M.dark,-.085,.62,-ZW,frame);cyl(.012,.01,M.ok,-.085,.62,-ZW+.027,'z',frame,10);
+ box(.012,.07,.05,M.red,-.07,.62,ZW,frame);
+ // káblový žľab od rozvádzača k stĺpu
+ box(.52,.04,.08,M.cover,-.22,.02,-1.205,frame);
+ box(.08,.04,.125,M.cover,0,.04,-1.1025,frame);
+ box(.08,.14,.03,M.cover,0,.15,-1.025,frame);
+ // energetická reťaz k vozíku (visí v slučke pri stĺpe +z)
+ var ecF=box(.045,1,.03,M.rubber,.09,2,1,frame),ecM=box(.045,1,.03,M.rubber,.09,2,.93,frame),ecB=box(.045,.03,.1,M.rubber,.09,1.4,.965,frame);
+
+ // ══════════ ZÁSOBOVANIE PÁSKOU ══════════
+ var SX=.095,YI=1.572,YO=1.52,YP=1.576;
+ var DISP=[{x:.65,z:-1.7},{x:1.35,z:-1.8}];
+ var sup=grp('supply');
+ // výložník s obracacími tyčami a spodné kladky na stĺpe
+ box(.05,.05,.86,M.blue,0,1.47,-1.48,sup);
+ var stay=box(.03,.03,.7075,M.blue,0,1.2225,-1.325,sup);stay.rotation.x=Math.atan2(.445,.55);
+ [1.47,1].forEach(function(y){box(.08,.1,.01,M.steel,0,y,-1.045,sup)});              // kotviace platne výložníka
+ box(.26,.03,.18,M.steel,0,1.495,-1.75,sup);
+ DISP.forEach(function(d,j){
+  var sx=j?-1:1;
+  var tb=cyl(.02,.11,M.alu,sx*SX,1.546,d.z,'x',sup,12);tb.rotation.y=Math.PI/4;   // obracacia tyč 45°
+  box(.02,.14,.12,M.steel,sx*.07,YP,-ZW,sup);                                      // konzola kladky
+  cyl(.05,.03,M.alu,sx*SX,YP,-ZW,'x',sup,24);                                      // spodná kladka
+  // pevné úseky pásky: kotúč → zásobník → horná kladka → obracacia tyč → stĺp
+  box(.012,1.076,.03,M.strap,d.x-.244,.988,d.z,sup);
+  box(d.x-.29-sx*SX,.012,.03,M.strap,(d.x-.29+sx*SX)/2,YI,d.z,sup);
+  box(.03,.012,-ZW-d.z,M.strap,sx*SX,YO,(d.z-ZW)/2,sup);
+  // odvíjač: stojan, kotúč s brzdou, zásobník (kompenzátor) a horná kladka
+  var g=grp('disp'+j);g.position.set(d.x,0,d.z);
+  box(.5,.02,.42,M.blue,0,.01,-.06,g);
+  box(.08,1.6,.08,M.blue,0,.82,-.17,g);
+  cyl(.025,.3,M.steel,0,.45,-.03,'z',g,10);
+  [-1,1].forEach(function(b){cyl(.3,.008,M.alu,0,.45,b*.075,'z',g,36)});
+  cyl(.25,.13,M.strap,0,.45,0,'z',g,36);
+  cyl(.06,.02,M.dark,0,.45,.09,'z',g,14);
+  box(.1,.1,.05,M.dark,0,.45,-.105,g);
+  box(.06,.5,.16,M.cover,-.25,.95,0,g);box(.004,.3,.05,M.dark,-.282,.95,0,g);
+  box(.25,.03,.08,M.steel,-.125,.95,-.11,g);
+  cyl(.04,.06,M.alu,-.29,1.526,0,'z',g,20);
+  cyl(.012,.24,M.steel,-.29,1.526,-.09,'z',g,8);
+  box(.3,.03,.03,M.steel,-.15,1.526,-.19,g);
+ });
+ // pohyblivé úseky pásky: zvislo popri stĺpe a šikmo od vozíka k hlave
+ var vrun=[1,-1].map(function(sx){return box(.03,1,.012,M.strap,sx*SX,2,-.9,sup)});
+ var drun=[0,1].map(function(){return box(.03,.012,1,M.strap,0,2,0,sup)});
+
+ // ══════════ ROZVÁDZAČ S OVLÁDACÍM PANELOM A MAJÁKOM ══════════
+ var cab=grp('cabinet');cab.position.set(-.7,0,-1.6);
+ box(.43,.08,.78,M.dark,0,.04,0,cab);
+ box(.45,1.18,.8,M.cover,0,.67,0,cab);
+ box(.008,.96,.72,M.white,-.229,.62,0,cab);                                        // dvere
+ box(.012,.12,.02,M.dark,-.239,.62,-.3,cab);                                       // kľučka
+ box(.004,.1,.1,M.hi,-.235,.8,.22,cab);cyl(.03,.035,M.red,-.254,.8,.22,'x',cab,14); // hlavný vypínač
+ box(.004,.05,.16,M.blue,-.235,1,-.2,cab);                                         // štítok
+ box(.02,.14,.8,M.cover,.2,1.32,0,cab);
+ [-1,1].forEach(function(b){box(.38,.05,.012,M.cover,0,1.285,b*.394,cab)});
+ var pan=grp('panel',cab);pan.position.set(-.03,1.33,0);pan.rotation.z=.26;        // šikmý ovládací pult
+ box(.4,.03,.78,M.cover,0,0,0,pan);
+ box(.19,.006,.27,M.dark,-.02,.017,-.18,pan);box(.16,.006,.24,M.screen,-.02,.02,-.18,pan); // dotykový panel
+ [M.ok,M.white,M.hi,M.motor].forEach(function(m,i){cyl(.016,.014,m,.02,.022,.04+i*.07,'y',pan,12)});
+ cyl(.036,.008,M.hi,-.06,.019,.31,'y',pan,16);cyl(.026,.03,M.red,-.06,.038,.31,'y',pan,16); // STOP
+ cyl(.012,.24,M.steel,.2,1.51,-.3,'y',cab,8);                                      // signalizačný maják
+ cyl(.035,.06,M.lampG,.2,1.66,-.3,'y',cab,16);cyl(.035,.06,M.lampA,.2,1.72,-.3,'y',cab,16);cyl(.035,.06,M.lampR,.2,1.78,-.3,'y',cab,16);
+ cyl(.036,.015,M.dark,.2,1.8175,-.3,'y',cab,16);
+
+ // ══════════ KAMERA QR pred vstupom ══════════
+ var qc=grp('qrcam');
+ box(.26,.015,.26,M.steel,CX,.0075,.9,qc);
+ box(.08,2.18,.08,M.blue,CX,1.105,.9,qc);
+ box(.06,.06,.92,M.blue,CX,2.165,.47,qc);
+ box(.16,.1,.16,M.dark,CX,2.085,0,qc);
+ cyl(.045,.02,M.alu,CX,2.025,0,'y',qc,16);
+ var lens=new THREE.Mesh(new THREE.CylinderGeometry(.03,.03,.03,16),M.red);lens.position.set(CX,2.01,0);qc.add(lens);
+ var cone=new THREE.Mesh(new THREE.ConeGeometry(.3,.52,24,1,true),new THREE.MeshBasicMaterial({color:0x2fd08a,transparent:true,opacity:0,side:THREE.DoubleSide,depthWrite:false}));
+ cone.position.set(CX,1.75,0);S.add(cone);
+
+ // ══════════ VOZÍK ZDVIHU (pohyb v osi y) ══════════
+ var carr=grp('carriage');
+ box(.1,.12,1.63,M.alu,0,.32,0,carr);                                              // hliníkový nosník
+ box(.104,.014,1.6,M.dark,0,.32,0,carr);                                           // drážka profilu
+ [-1,1].forEach(function(b){
+  box(.12,.4,.015,M.steel,0,.28,b*.8225,carr);                                     // čelná doska
+  box(.07,.08,.04,M.dark,0,.14,b*.85,carr);box(.07,.08,.04,M.dark,0,.36,b*.85,carr); // vozíky lineárneho vedenia
+  box(.64,.03,.04,M.alu,0,.245,b*.17,carr);                                        // vedenie na zmenu rozteče hláv
+ });
+ [-1,1].forEach(function(sx){box(.012,.06,.4,M.steel,sx*.326,.235,0,carr)});
+ cyl(.008,.66,M.steel,0,.222,0,'x',carr,10);                                       // pohybová skrutka rozteče
+ cyl(.03,.1,M.motor,.385,.222,0,'x',carr,14);                                      // servopohon rozteče
+ cyl(.01,.25,M.steel,0,.44,-.85,'x',carr,8);                                       // horné kladky pásky
+ [1,-1].forEach(function(sx){cyl(.05,.03,M.alu,sx*SX,.44,-.85,'x',carr,24)});
+ box(.045,.03,.085,M.dark,.09,.3,.8725,carr);                                         // unášač energetickej reťaze
+ box(.04,.05,.04,M.hi,-.075,.215,.5,carr);cyl(.01,.012,M.dark,-.075,.184,.5,'y',carr,10); // snímač výšky nákladu
+
+ // ══════════ PÁSKOVACIE HLAVY (2 ks, rozteč sa mení) ══════════
+ function mkHead(sg,n){
+  var g=grp(n);
+  box(.17,.03,.46,M.dark,0,-.185,0,g);                                             // základová doska
+  // uzatvárací a strihací mechanizmus
+  box(.1,.02,.14,M.hi,0,-.21,0,g);box(.06,.02,.006,M.alu,0,-.21,.08,g);box(.06,.02,.02,M.steel,0,-.21,-.085,g);
+  // kovové teleso s technickým krytom
+  box(.16,.2,.25,M.cover,0,-.07,.015,g);box(.15,.1,.2,M.cover,0,.08,.015,g);
+  [-.04,-.075,-.11].forEach(function(y){box(.004,.012,.14,M.dark,sg*.081,y,.015,g)});
+  box(.004,.04,.1,M.blue,sg*.076,.08,.015,g);
+  // mechanizmus podávania pásky
+  box(.08,.12,.12,M.dark,0,-.11,-.17,g);
+  cyl(.04,.025,M.steel,sg*.0525,-.11,-.17,'x',g,20);cyl(.018,.025,M.rubber,sg*.0525,-.052,-.17,'x',g,12);
+  cyl(.032,.13,M.motor,0,.015,-.17,'y',g,14);
+  // napínací mechanizmus
+  box(.08,.12,.1,M.dark,0,-.11,.19,g);
+  cyl(.05,.03,M.steel,sg*.055,-.11,.19,'x',g,24);cyl(.02,.03,M.rubber,sg*.055,-.04,.19,'x',g,12);
+  cyl(.036,.14,M.motor,0,.02,.19,'y',g,14);
+  // uchytenie k vedeniu vozíka
+  box(.1,.058,.1,M.steel,0,.159,.015,g);box(.15,.012,.4,M.steel,0,.194,0,g);
+  [-1,1].forEach(function(b){box(.1,.03,.06,M.dark,0,.215,b*.17,g)});
+  box(.03,.03,.03,M.alu,0,.222,0,g);
+  // vstup pásky: stĺpik, vratná kladka, lievik
+  box(.02,.3,.02,M.steel,sg*.045,.34,-.24,g);
+  cyl(.025,.05,M.alu,0,.465,-.24,'x',g,14);cyl(.008,.07,M.steel,sg*.02,.465,-.24,'x',g,8);
+  box(.05,.03,.03,M.alu,0,-.035,-.215,g);
+  box(.03,.515,.012,M.strap,0,.2075,-.215,g);
+  // vodiaca dráha pásky okolo nákladu (rám z hliníkového profilu, ide dolu s hlavou)
+  var CL=HCD-PB-.07-.09;                                                         // dĺžka zvislej časti rámu
+  [-1,1].forEach(function(b){
+   var zi=b>0?.24:.23;
+   box(.05,.008,.592-zi,M.alu,0,-.088,b*(.592+zi)/2,g);
+   box(.05,CL,.008,M.alu,0,-.09-CL/2,b*.588,g);
+   [-1,1].forEach(function(sx){box(.006,CL,.02,M.alu,sx*.028,-.09-CL/2,b*.574,g)});
+  });
+  return g;
+ }
+ var cars=[mkHead(1,'head0'),mkHead(-1,'head1')];
+ var scan=new THREE.Mesh(new THREE.PlaneGeometry(1.5,1.5),new THREE.MeshBasicMaterial({color:0x2fd08a,transparent:true,opacity:0,side:THREE.DoubleSide,depthWrite:false}));
+ scan.rotation.y=Math.PI/2;scan.position.set(0,.85,0);S.add(scan);
+ var flashes=[0,1].map(function(){var f=new THREE.Mesh(new THREE.SphereGeometry(.08,16,12),new THREE.MeshBasicMaterial({color:0xffb62e,transparent:true,opacity:0}));S.add(f);return f});
+
+ // ══════════ LYŽINY s vlastným vedením a pohonom ══════════
+ var LL=1.75;                                                                      // dĺžka lyžiny (m)
+ var lbase=grp('lanceBase');
+ [-1.3,-2.6].forEach(function(z){box(.72,.02,.08,M.steel,0,.01,z,lbase)});          // priečne vedenie na podlahe
+ function mkLance(sg,n){
+  var g=grp(n);
+  box(.12,.12,1.86,M.blue,0,LY-.08,-1.97,g);                                         // nosník vedenia
+  box(.06,.008,1.86,M.alu,0,LY-.016,-1.97,g);                                         // klzná lišta
+  [-1.3,-2.6].forEach(function(z){box(.1,.03,.1,M.dark,0,.035,z,g);box(.06,LY-.19,.06,M.blue,0,(LY-.09)/2,z,g)});
+  box(.02,.07,1.86,M.cover,sg*.07,LY-.055,-1.97,g);                                    // kryt remeňa
+  box(.1,.1,.1,M.steel,0,LY-.08,-2.95,g);cyl(.045,.18,M.motor,0,LY+.06,-2.95,'y',g,14); // prevodovka a motor
+  var bar=box(.05,.02,LL,M.steel,0,LY,-BASE-LL/2,g);                              // lyžina 50 × 20 mm
+  var drv=box(.1,.06,.12,M.dark,0,LY+.04,-BASE-LL+.06,g);                             // unášač
+  return{g:g,bar:bar,drv:drv};
+ }
+ var skids=[mkLance(1,'lance0'),mkLance(-1,'lance1')];
+
+ // ══════════ MOBILNÁ ZOSTAVA: AMR → skejt → paleta → náklad → QR ══════════
+ // textúry (svetlé, farbu dáva materiál): drevo, kartón, manipulačná značka
+ function tex(w,h,draw){var c=document.createElement('canvas');c.width=w;c.height=h;draw(c.getContext('2d'),w,h);return new THREE.CanvasTexture(c)}
+ var seed=11;function rnd(){seed=(seed*16807)%2147483647;return seed/2147483647}
+ M.pal.map=tex(64,128,function(g,w,h){g.fillStyle='#fff';g.fillRect(0,0,w,h);for(var i=0;i<46;i++){g.strokeStyle='rgba(60,40,15,'+(.05+rnd()*.14)+')';g.lineWidth=.6+rnd()*1.4;var x=rnd()*w;g.beginPath();g.moveTo(x,0);g.bezierCurveTo(x+rnd()*5-2.5,h*.3,x+rnd()*5-2.5,h*.7,x+rnd()*4-2,h);g.stroke()}});
+ mat('pal2',0,{roughness:.85});M.pal2.map=M.pal.map;
+ var cardT=tex(64,64,function(g,w,h){g.fillStyle='#fff';g.fillRect(0,0,w,h);for(var i=0;i<500;i++){g.fillStyle='rgba(70,45,15,'+rnd()*.07+')';g.fillRect(rnd()*w,rnd()*h,2+rnd()*4,1)}});
+ M.box.map=cardT;M.box2.map=cardT;mat('box3',0,{roughness:.9});M.box3.map=cardT;
+ mat('tape',0xb08c5a,{roughness:.35});
+ mat('shell',0xd9dde0,{metalness:.15,roughness:.45});mat('shellW',0xf2f4f5,{roughness:.4});
+ var markT=tex(64,64,function(g){g.fillStyle='#fff';g.fillRect(0,0,64,64);g.fillStyle='#222';[18,46].forEach(function(x){g.beginPath();g.moveTo(x,8);g.lineTo(x+11,24);g.lineTo(x+4,24);g.lineTo(x+4,50);g.lineTo(x-4,50);g.lineTo(x-4,24);g.lineTo(x-11,24);g.closePath();g.fill()});g.fillRect(8,54,48,4)});
+ // kváder so zaoblenými zvislými hranami (pôdorys L × W, polomer r)
+ function rbox(L,W,h,r,m,y,p){
+  box(L-2*r,h,W,m,0,y,0,p);box(L,h,W-2*r,m,0,y,0,p);
+  [[1,1],[1,-1],[-1,1],[-1,-1]].forEach(function(q){cyl(r,h,m,q[0]*(L/2-r),y,q[1]*(W/2-r),'y',p,12)});
+ }
+
+ // ── AMR (vzhľad podľa radu KUKA KMP 600, odhad; pôdorys a výška z CFG) ──
+ var A=CFG.amr,amr=grp('amr'),body=grp('amrBody',amr),hx=A.L/2,hz=A.W/2;
+ rbox(A.L-.05,A.W-.05,.075,.05,M.dark,.0675,body);                                 // tmavá spodná časť
+ rbox(A.L,A.W,.03,.07,M.rubber,.06,body);                                          // bezpečnostný nárazník
+ rbox(A.L-.03,A.W-.03,A.H-.145,.07,M.shell,.105+(A.H-.145)/2,body);                // sivý plášť
+ rbox(A.L-.09,A.W-.07,.035,.08,M.shellW,A.H-.0225,body);                           // biely horný kryt
+ rbox(A.L-.3,A.W-.2,.005,.04,M.dark,A.H-.0025,body);                               // horná servisná doska
+ [[1,1],[1,-1],[-1,1],[-1,-1]].forEach(function(q){bolt(q[0]*(hx-.2),A.H+.003,q[1]*(hz-.13),'y',body)});
+ [-1,1].forEach(function(b){
+  box(.46,.014,.004,M.amr,0,A.H-.06,b*(hz-.014),body);                             // farebný pás
+  [-1,1].forEach(function(e){[-1,1].forEach(function(k){                           // šípky smeru jazdy
+   var c=box(.05,.012,.004,M.dark,e*.33,A.H-.1+k*.015,b*(hz-.014),body);c.rotation.z=-k*.6});
+   cyl(.026,.006,M.hi,e*(hx-.13),A.H-.085,b*(hz-.012),'z',body,14);                // núdzový STOP
+   cyl(.018,.02,M.red,e*(hx-.13),A.H-.085,b*(hz-.005),'z',body,14);
+  });
+  cyl(.075,.04,M.rubber,0,.075,b*(hz-.1),'z',body,20);                             // hnacie kolesá
+  [-1,1].forEach(function(e){cyl(.03,.03,M.rubber,e*(hx-.12),.03,b*(hz-.11),'z',body,12)}); // podporné kolieska
+ });
+ [-1,1].forEach(function(s){
+  box(.05,.07,.22,M.dark,s*(hx-.035),.15,0,body);                                  // výrez bezpečnostného skenera
+  cyl(.032,.045,M.hi,s*(hx-.03),.15,0,'y',body,16);cyl(.034,.012,M.dark,s*(hx-.03),.1785,0,'y',body,16);
+  box(.006,.012,.26,M.ok,s*(hx-.012),A.H-.05,0,body);                              // stavová LED lišta
+  box(.03,.03,.05,M.dark,s*(hx-.02),.085,s*.2,body);                               // nabíjacie kontakty
+ });
+ cyl(.12,LIFT,M.steel,0,A.H+LIFT/2,0,'y',body,24);                                 // zdvíhacia doska pod skejt
+
+ // ── skejt podľa výkresu DOS1654-KMP600P: otvorený rám, 4 nohy s kolieskami vedľa AMR ──
+ var K=CFG.skate,sk=grp('skate',amr),fy=FT-K.prof/2,lx=K.frameX/2-K.beam/2,lz=K.frameZ/2-K.beam/2,ix=K.frameX-2*K.beam;
+ [-1,1].forEach(function(s){
+  box(K.beam,K.prof,K.frameZ,M.steel,s*lx,fy,0,sk);                                // hlavné nosníky (naprieč AMR, 960)
+  box(ix,K.prof,K.beam,M.steel,0,fy,s*lz,sk);                                      // čelá rozšírenia (2 × 80)
+  box(ix,K.prof,.03,M.steel,0,fy,s*(K.inner/2-.015),sk);                           // čelo pôvodného rámu 800
+  box(.03,K.prof,K.inner-.06,M.steel,s*.09,fy,0,sk);                               // pozdĺžne výstuhy
+  box(ix,K.prof,.03,M.steel,0,fy,s*.2,sk);                                         // priečne výstuhy
+ });
+ box(ix,K.prof,.06,M.steel,0,fy,0,sk);
+ box(.3,K.hub,.3,M.blue,0,FT-K.prof-K.hub/2,0,sk);                                 // uchytenie na zdvih AMR (55)
+ var wr=K.wheelD/2;
+ [[1,1],[1,-1],[-1,1],[-1,-1]].forEach(function(q){
+  var g=grp('leg',sk);g.position.set(q[0]*lx,0,q[1]*lz);
+  box(K.leg,K.legH,K.leg,M.steel,0,K.casterH+K.legH/2,0,g);                         // noha 80 × 80, 242
+  box(K.leg+.012,.02,K.leg+.012,M.dark,0,FT-K.prof-.01,0,g);                        // objímka pod rámom
+  box(K.beam,K.pad,K.beam,M.dark,0,FT+K.pad/2,0,g);                                 // doraz palety 6 mm
+  [-1,1].forEach(function(k){bolt(k*.022,FT+K.pad+.005,-k*.022,'y',g)});
+  box(K.leg+.006,.008,K.leg+.006,M.alu,0,K.casterH-.004,0,g);                       // príruba kolieska
+  cyl(.028,.014,M.steel,0,K.casterH-.015,0,'y',g,14);                               // otočné ložisko
+  [-1,1].forEach(function(k){box(.05,.06,.004,M.alu,-.02,.058,k*.02,g)});            // vidlica
+  cyl(wr,.03,M.rubber,-.03,wr,0,'z',g,18);cyl(.014,.036,M.alu,-.03,wr,0,'z',g,10);  // koliesko ø75 na podlahe
+ });
+ var vp=grp('guidePlate',sk),px=K.frameX/2+.003,yy=FT-K.prof;                      // zvislý manipulačný plech
+ [[.16,.13],[.115,.09],[.07,.09]].forEach(function(d){box(.006,d[1],d[0],M.steel,px,yy+d[1]/2,0,vp);yy+=d[1]});
+ cyl(.035,.006,M.steel,px,yy,0,'x',vp,16);cyl(.012,.008,M.dark,px,yy,0,'x',vp,10);
+
+ // ── drevená paleta 800 × 600 (800 naprieč AMR), prejazdná z oboch smerov ──
+ var P=CFG.pallet,pg=grp('pallet',sk),bd=P.board,ox=P.X/2-P.blockW/2,oz=P.Z/2-P.blockW/2;
+ [-1,0,1].forEach(function(i){
+  box(P.blockW,bd,P.Z,M.pal,i*ox,PB+bd/2,0,pg);                                     // spodné lyžiny
+  box(P.X,bd,P.blockW,M.pal2,0,PB+bd+P.block+bd/2,i*oz,pg);                         // priečne nosníky
+  [-1,0,1].forEach(function(k){box(P.blockW,P.block,P.blockW,M.pal2,i*ox,PB+bd+P.block/2,k*oz,pg)}); // bloky
+ });
+ for(var i=0;i<5;i++)box(.1,bd,P.Z,M.pal,-P.X/2+.05+i*(P.X-.1)/4,PB+2*bd+P.block+bd/2,0,pg); // horné dosky s medzerami
+
+ // ── náklad: kartónové krabice vo vrstvách, krycí preklad, QR etiketa ──
+ var Ld=CFG.load,lg=grp('load',pg),ly0=PB+PH,BX=[M.box,M.box2,M.box3];
+ for(var l=0;l<Ld.layers;l++)for(var i=0;i<2;i++)for(var k=0;k<2;k++){
+  var x=(i-.5)*Ld.bx,z=(k-.5)*Ld.bz,y=ly0+l*Ld.bh+Ld.bh/2,sz=k?1:-1;
+  box(Ld.bx-Ld.gap,Ld.bh-.003,Ld.bz-Ld.gap,BX[(i+k+l)%3],x,y,z,lg);                 // krabica
+  box(.05,.07,.001,M.tape,x,y+Ld.bh/2-.036,z+sz*(Ld.bz-Ld.gap)/2,lg);               // lepiaca páska cez hranu
+  box(Ld.bx-Ld.gap+.001,.002,Ld.bz-Ld.gap+.001,M.dark,x,y-Ld.bh*.36,z,lg);          // záhyb kartónu
+  if((i+l)%2===0){var mk=new THREE.Mesh(new THREE.PlaneGeometry(.07,.07),new THREE.MeshBasicMaterial({map:markT}));
+   mk.rotation.y=(i?1:-1)*Math.PI/2;mk.position.set((i?1:-1)*(Ld.bx-Ld.gap/2+.001),y+.05,z);lg.add(mk)} // značka „touto stranou hore“
+ }
+ var topY=ly0+Ld.layers*Ld.bh;
+ box(P.X-.004,Ld.sheet,P.Z-.004,M.box2,0,topY+Ld.sheet/2,0,lg);                     // krycí preklad
+ // QR kód na vrchu nákladu (len paleta s požiadavkou 2+2); animovaný sken, nie skutočné čítanie
+ var qrMesh=grp('qr',lg);
+ (function(){
+  var u=8,N=21,qs=7;
+  var tx=tex(N*u+2*u,N*u+2*u,function(g,w){
+   g.fillStyle='#fff';g.fillRect(0,0,w,w);g.translate(u,u);g.fillStyle='#111';
+   function r2(){qs=(qs*16807)%2147483647;return qs/2147483647}
+   for(var y=0;y<N;y++)for(var x=0;x<N;x++){
+    if((x<8&&y<8)||(x>12&&y<8)||(x<8&&y>12))continue;
+    if(x===6||y===6){if((x+y)%2===0)g.fillRect(x*u,y*u,u,u);continue}
+    if(r2()>.5)g.fillRect(x*u,y*u,u,u);
+   }
+   [[0,0],[14,0],[0,14]].forEach(function(p){
+    g.fillStyle='#111';g.fillRect(p[0]*u,p[1]*u,7*u,7*u);
+    g.fillStyle='#fff';g.fillRect((p[0]+1)*u,(p[1]+1)*u,5*u,5*u);
+    g.fillStyle='#111';g.fillRect((p[0]+2)*u,(p[1]+2)*u,3*u,3*u)});
+  });
+  tx.magFilter=THREE.NearestFilter;
+  box(.2,.001,.2,M.white,0,topY+Ld.sheet+.0005,0,qrMesh);                           // etiketa
+  var q=new THREE.Mesh(new THREE.PlaneGeometry(.18,.18),new THREE.MeshBasicMaterial({map:tx}));
+  q.rotation.x=-Math.PI/2;q.position.set(0,topY+Ld.sheet+.0015,0);qrMesh.add(q);
+ })();
+
+ // páska okolo nákladu: w = polovičná šírka slučky, y1 = výška vrchnej časti
+ var EW=.035,ET=.012,gz=new THREE.BoxGeometry(EW,ET,1),gx=new THREE.BoxGeometry(1,ET,EW),gy=new THREE.BoxGeometry(EW,1,ET);
+ function makeStrap(parent,mode){
+  var e=[];for(var i=0;i<5;i++){var m=new THREE.Mesh(i%2?gy:(mode==='B'?gx:gz),M.strap);m.castShadow=true;m.visible=false;parent.add(m);e.push(m)}
+  return{e:e,upd:function(x,p,ins,w0,insW){
+   var w=w0+(insW||0),y1=Y1+ins,y0=Y0;
+   var P=[[0,y1],[-w,y1],[-w,y0],[w,y0],[w,y1],[0,y1]],L=[],T=0,i;
+   for(i=0;i<5;i++){L[i]=Math.hypot(P[i+1][0]-P[i][0],P[i+1][1]-P[i][1]);T+=L[i]}
+   var d=p*T,c=0;
+   for(i=0;i<5;i++){
+    var f=Math.max(0,Math.min(1,(d-c)/L[i]));c+=L[i];var m=e[i];m.visible=f>0;
+    if(!m.visible)continue;
+    var a=P[i],b=P[i+1];
+    var uu=a[0]+(b[0]-a[0])*f/2,yy=a[1]+(b[1]-a[1])*f/2;
+    if(mode==='B')m.position.set(uu,yy,x);else m.position.set(x,yy,uu);
+    if(i%2)m.scale.y=L[i]*f;else if(mode==='B')m.scale.x=L[i]*f;else m.scale.z=L[i]*f;
+   }},
+   hide:function(){e.forEach(function(m){m.visible=false})}};
+ }
+ var act=[makeStrap(S,'A'),makeStrap(S,'A')],sealed=[];
+
+ // ══════════ SKLADOVÉ PROSTREDIE podľa pôdorysu (px výkresu → m cez WH.s) ══════════
+ function wx(px){return (px-WH.ox)*WH.s}
+ function wz(py){return (py-WH.oy)*WH.s}
+ mat('rackB',0x1d4f9e,{metalness:.3,roughness:.5});mat('rackO',0xe27a17,{metalness:.2,roughness:.5});
+ mat('wrap',0xe6eaed,{roughness:.25});mat('crate',0x3d4852,{roughness:.7});
+ mat('yel',0xf2c200,{roughness:.6});mat('line',0xf1f1ec,{roughness:.8});mat('route',0x2f7fd0,{roughness:.7});
+ mat('wall',0xd4d8da,{roughness:.95});mat('conc',0xa7abad,{roughness:.9});mat('roofM',0xc3c9cd,{roughness:.9});
+ mat('shelf',0x8e9aa3,{metalness:.45,roughness:.45});mat('shelfB',0xc9cfd3,{metalness:.2,roughness:.6});
+ mat('mesh',0x4a545b,{transparent:true,opacity:.22,roughness:.8,depthWrite:false});mat('meshD',0xf2c200,{transparent:true,opacity:.35,depthWrite:false});
+ mat('sig',0x2fd08a,{emissive:0x2fd08a,emissiveIntensity:1});mat('sig0',0x2f8f5b,{emissive:0x2f8f5b,emissiveIntensity:.7});
+ M.led=new THREE.MeshBasicMaterial({color:0xfff6dc});
+ // dávka: všetky kvádre jednej skupiny s rovnakým materiálom = jeden InstancedMesh
+ var UB=new THREE.BoxGeometry(1,1,1),dummy=new THREE.Object3D();
+ function Batch(parent){
+  var L={};
+  return{add:function(m,x,y,z,w,h,d,ry,rx){(L[m]||(L[m]=[])).push([x,y,z,w,h,d,ry||0,rx||0])},
+   build:function(){Object.keys(L).forEach(function(k){
+    var a=L[k],im=new THREE.InstancedMesh(UB,M[k],a.length);
+    a.forEach(function(q,i){dummy.position.set(q[0],q[1],q[2]);dummy.rotation.set(q[7],q[6],0);dummy.scale.set(q[3],q[4],q[5]);dummy.updateMatrix();im.setMatrixAt(i,dummy.matrix)});
+    im.instanceMatrix.needsUpdate=true;im.frustumCulled=false;parent.add(im)})}};
+ }
+ var wh=grp('warehouse'),G={},B={};
+ ['floor','route','cell','store','walls','roof'].forEach(function(n){G[n]=grp('wh_'+n,wh);B[n]=Batch(G[n])});
+ var E=WH.ext,fx0=wx(E[0]),fx1=wx(E[2]),fz0=wz(E[1]),fz1=wz(E[3]),HH=WH.hallH;
+ var sd=5;function rn(){sd=(sd*16807)%2147483647;return sd/2147483647}
+ function kind(){var r=rn();return r<.55?['box','box2','box3'][Math.floor(rn()*3)]:(r<.85?'wrap':'crate')}
+ function nearCol(x,z){return WH.mainCols.some(function(c){return Math.abs(x-wx(c[0]))<.75&&Math.abs(z-wz(c[1]))<.95})}
+ // paletová jednotka: paleta (w v osi x, d v osi z) + náklad výšky h; bands = prepáskovaná
+ function unit(b,x,y,z,w,d,h,k,bands){
+  if(nearCol(x,z))return;
+  [-1,0,1].forEach(function(o){b.add('pal2',x,y+.057,z+o*(d/2-.06),w,.114,.1)});
+  b.add('pal',x,y+.129,z,w,.03,d);
+  b.add(k,x,y+.144+h/2,z,w-.04,h,d-.04);
+  if(bands)[-1,1].forEach(function(o){b.add('strap',x+o*w*.22,y+.144+h/2,z,.03,h+.012,d-.028)});
+ }
+ function label(txt,w,h,col,bg){return tex(256,Math.round(256*h/w),function(g,W,Hh){if(bg){g.fillStyle=bg;g.fillRect(0,0,W,Hh)}g.fillStyle=col;g.font='700 '+Math.round(Hh*.62)+'px Arial,sans-serif';g.textAlign='center';g.textBaseline='middle';g.fillText(txt,W/2,Hh/2)})}
+ function decal(txt,x,z,w,h,col,parent,bg){ // nápis na podlahe, čitateľný z juhu
+  var m=new THREE.Mesh(new THREE.PlaneGeometry(w,h),new THREE.MeshBasicMaterial({map:label(txt,w,h,col,bg),transparent:true,color:0xffffff}));
+  m.rotation.x=-Math.PI/2;m.position.set(x,.012,z);parent.add(m);return m}
+
+ // ── podlaha: betón s dilatačnými škárami (dlaždica 6 × 6 m) ──
+ var flo=grp('floor');
+ var ct=tex(256,256,function(g,w,h){
+  g.fillStyle='#fff';g.fillRect(0,0,w,h);
+  for(var i=0;i<26;i++){g.fillStyle='rgba(60,60,55,'+(.02+rnd()*.04)+')';g.beginPath();g.arc(rnd()*w,rnd()*h,14+rnd()*40,0,6.2832);g.fill()}
+  for(i=0;i<1500;i++){g.fillStyle='rgba(40,40,40,'+rnd()*.09+')';g.fillRect(rnd()*w,rnd()*h,1+rnd()*2,1)}
+  g.strokeStyle='rgba(30,30,30,.42)';g.lineWidth=2;g.strokeRect(0,0,w,h)});
+ ct.wrapS=ct.wrapT=THREE.RepeatWrapping;ct.repeat.set((fx1-fx0+2)/6,(fz1-fz0+2)/6);M.floor.map=ct;
+ var fl=new THREE.Mesh(new THREE.PlaneGeometry(fx1-fx0+2,fz1-fz0+2),M.floor);fl.rotation.x=-Math.PI/2;fl.position.set((fx0+fx1)/2,0,(fz0+fz1)/2);fl.receiveShadow=true;flo.add(fl);
+
+ // ── ľavá časť: 4 regálové rady (1 jednoduchý + 3 dvojité), paletové regály ──
+ var RK=WH.rack,rx0=wx(RK.px0),rx1=rx0+RK.bays*RK.bay;
+ function rackRow(b,pyc){
+  var zc=wz(pyc),D=RK.depth,i;
+  for(i=0;i<=RK.bays;i++){var x=rx0+i*RK.bay;
+   [-1,1].forEach(function(s){b.add('rackB',x,RK.H/2,zc+s*(D/2-.04),.09,RK.H,.07);b.add('yel',x,.2,zc+s*(D/2+.03),.14,.4,.05)}); // stojiny a chrániče
+   for(var k=0;k<4;k++)b.add('rackB',x,1.1+k*1.4,zc,.03,Math.hypot(1.4,D-.15),.03,0,(k%2?1:-1)*Math.atan2(D-.15,1.4)); // diagonály
+  }
+  for(i=0;i<RK.bays;i++){var xc=rx0+(i+.5)*RK.bay;
+   RK.levels.forEach(function(y,L){
+    if(L)[-1,1].forEach(function(s){b.add('rackO',xc,y-.06,zc+s*(D/2-.04),RK.bay-.09,.11,.05)});          // nosníky
+    for(var p=-1;p<=1;p++){
+     if(L)[-1,1].forEach(function(s){b.add('line',xc+p*.86,y-.06,zc+s*(D/2-.012),.14,.06,.006)});          // štítky pozícií
+     if(rn()<.8)unit(b,xc+p*.86,y,zc,.8,1.2,.45+rn()*.8,kind());
+    }
+   });
+  }
+ }
+ WH.rackRows.forEach(function(r,i){
+  r.forEach(function(py){rackRow(B.store,py)});
+  var zc=wz((r[0]+r[r.length-1])/2),dz=(wz(r[r.length-1])-wz(r[0]))+RK.depth+.3;
+  B.store.add('yel',rx1+.16,.2,zc,.14,.4,dz);                                                            // čelný chránič radu
+  var sg=new THREE.Mesh(new THREE.PlaneGeometry(.6,.4),new THREE.MeshBasicMaterial({map:label('R'+(i+1),.6,.4,'#fff','#1d4f9e')}));
+  sg.rotation.y=Math.PI/2;sg.position.set(rx1+.06,2.6,zc);G.store.add(sg);                                 // označenie radu (názov je odhad)
+ });
+ // miesta pri čelách radov, zóny s krížom a čiara pozdĺž uličky (px 508)
+ [[297,318],[442,465]].forEach(function(r){for(var i=0;i<3;i++)if(rn()<.7)unit(B.store,wx(470+i*15.3),0,(wz(r[0])+wz(r[1]))/2,.6,.8,.5+rn()*.6,kind())});
+ [[480,378],[480,547]].forEach(function(c){[-1,1].forEach(function(s){B.store.add('yel',wx(c[0]),.004,wz(c[1]),1.9,.008,.08,s*Math.PI/4)})});
+ B.floor.add('yel',wx(508),.004,(wz(284)+fz1)/2,.1,.008,fz1-wz(284));
+ [[0,270,55,286],[57,270,110,286]].forEach(function(r){B.store.add('shelfB',(wx(r[0])+wx(r[2]))/2,.6,(wz(r[1])+wz(r[3]))/2,wx(r[2])-wx(r[0])-.06,1.2,wz(r[3])-wz(r[1]))}); // neutrálne objekty
+ [[112,150],[152,190],[192,230]].forEach(function(r){B.store.add('yel',(wx(r[0])+wx(r[1]))/2,.35,wz(284),wx(r[1])-wx(r[0])-.1,.08,.08)});                              // zábrany
+
+ // ── horná časť: uličky plošného skladovania (typ systému je odhad) ──
+ function lanes(b,px0,pitch,n,py0,py1,slots,both){
+  var z0=wz(py0),z1=wz(py1);
+  for(var i=0;i<=n;i++)b.add('line',wx(px0+i*pitch),.004,(z0+z1)/2,.05,.008,z1-z0);
+  for(i=0;i<n;i++){var xc=wx(px0+(i+.5)*pitch);
+   b.add('line',xc,.004,z0+.28,pitch*WH.s-.25,.008,.36);if(both)b.add('line',xc,.004,z1-.28,pitch*WH.s-.25,.008,.36);
+   slots.forEach(function(py){if(rn()<.68){var h=.6+rn()*.9;unit(b,xc,0,wz(py),pitch*WH.s>.9?.8:.76,1.2,h,kind());if(h<1&&rn()<.3)unit(b,xc,.144+h,wz(py),.76,1.2,.5+rn()*.4,kind())}});
+  }
+ }
+ lanes(B.store,22,15.4,9,62,125,[88,111]);lanes(B.store,180,15.65,23,62,125,[88,111]);
+ [561,593,626,658,690,721,753,785,816,847,877].forEach(function(c){lanes(B.store,c-9,18,1,30,132,[56,81,106],true)});
+ [[180,25,205,37],[370,22,445,37],[462,22,490,37]].forEach(function(r){B.store.add('shelfB',(wx(r[0])+wx(r[2]))/2,.6,(wz(r[1])+wz(r[3]))/2,wx(r[2])-wx(r[0]),1.2,wz(r[3])-wz(r[1]))});
+
+ // ── pravá časť: policové regály v dvojradoch a hustý blok paliet (typ je odhad) ──
+ function shelfRow(b,px0,px1,py0,py1){
+  var n=Math.max(1,Math.round((px1-px0)/22.1)),w=(wx(px1)-wx(px0))/n,zc=(wz(py0)+wz(py1))/2,d=wz(py1)-wz(py0)-.04,i;
+  for(i=0;i<=n;i++)[-1,1].forEach(function(s){b.add('shelf',wx(px0)+i*w,1,zc+s*(d/2-.02),.04,2,.04)});
+  for(i=0;i<n;i++){var xc=wx(px0)+(i+.5)*w;
+   [.1,.55,1,1.45,1.9].forEach(function(y,L){
+    b.add('shelfB',xc,y,zc,w-.04,.03,d);
+    if(L<4){var k=1+Math.floor(rn()*3);for(var j=0;j<k;j++){if(rn()<.2)continue;var bh=.14+rn()*.2;b.add(['box','box2','box3','crate'][Math.floor(rn()*4)],xc-w/2+.08+(j+.5)*(w-.16)/k,y+.015+bh/2,zc,(w-.2)/k*.85,bh,d*.78)}}
+   });
+  }
+ }
+ [[585,872,198,225],[585,872,240,267],[585,927,288,315],[718,927,320,348],[718,927,362,390]].forEach(function(r){
+  var m=(r[2]+r[3])/2;shelfRow(B.store,r[0],r[1],r[2],m);shelfRow(B.store,r[0],r[1],m,r[3])});
+ for(var c=0;c<9;c++)for(var r=0;r<10;r++)if(rn()<.5+r*.04)unit(B.store,wx(718+(c+.5)*22),0,wz(405+(r+.5)*14.5),.8,.6,.5+rn()*.9,kind());
+ // pracoviská a regály v pravej časti (neutrálne modely podľa pôdorysného tvaru)
+ [[598,660,320,333],[662,676,320,333],[585,662,385,400]].forEach(function(r){shelfRow(B.store,r[0],r[1],r[2],r[3])});
+ [[625,350,650,370],[625,430,650,450],[625,507,650,527],[585,530,600,555,1],[625,540,650,555,1],[690,390,715,400,1]].forEach(function(r){
+  var xa=wx(r[0]),xb=wx(r[2]),za=wz(r[1]),zb=wz(r[3]),xc=(xa+xb)/2,zc=(za+zb)/2;
+  B.store.add('shelfB',xc,.74,zc,xb-xa,.04,zb-za);
+  [[xa,za],[xa,zb],[xb,za],[xb,zb]].forEach(function(q){B.store.add('shelf',q[0]+(q[0]<xc?.04:-.04),.36,q[1]+(q[1]<zc?.04:-.04),.04,.72,.04)});
+  if(r[4]){B.store.add('crate',xc,.95,zc,.4,.3,.03);B.store.add('crate',xc,.78,zc,.2,.03,.15)}             // monitor
+ });
+ [585,599,613].forEach(function(px){B.store.add('crate',wx(px+6),.3,wz(407),.55,.6,.45)});
+
+ // ── páskovacie pracovisko: oplotenie, pôvodné rozvádzače, odkladacie miesta paliet ──
+ var CE=WH.cell,cxw=wx(CE[0]),cxe=wx(CE[2]),czn=wz(CE[1]),czs=wz(CE[3]),GT=WH.gate;
+ function fence(b,ax,az,bx,bz,door){
+  var len=Math.hypot(bx-ax,bz-az),n=Math.max(1,Math.round(len/2)),alongX=Math.abs(bx-ax)>Math.abs(bz-az);
+  for(var i=0;i<=n;i++)b.add('yel',ax+(bx-ax)*i/n,1.05,az+(bz-az)*i/n,.06,2.1,.06);
+  b.add(door?'meshD':'mesh',(ax+bx)/2,1.07,(az+bz)/2,alongX?len:.02,1.86,alongX?.02:len);
+  b.add('yel',(ax+bx)/2,2.08,(az+bz)/2,alongX?len:.04,.04,alongX?.04:len);
+ }
+ [cxw,cxe].forEach(function(x){fence(B.cell,x,czn,x,-GT);fence(B.cell,x,GT,x,czs)});                        // západ a východ s prejazdom AMR
+ fence(B.cell,cxw,czn,wx(330),czn);fence(B.cell,wx(330),czn,wx(348),czn,1);fence(B.cell,wx(348),czn,cxe,czn); // sever s dvierkami
+ fence(B.cell,cxw,czs,wx(300),czs);fence(B.cell,wx(300),czs,wx(318),czs,1);fence(B.cell,wx(318),czs,wx(460),czs);
+ fence(B.cell,wx(460),czs,wx(478),czs,1);fence(B.cell,wx(478),czs,cxe,czs);
+ [[cxw+.25,czn+.2,cxe-.25,czn+.2],[cxw+.25,czs-.2,cxe-.25,czs-.2]].forEach(function(q){B.cell.add('yel',(q[0]+q[2])/2,.004,q[1],q[2]-q[0],.008,.08)}); // ohraničenie pracoviska
+ [cxw,cxe].forEach(function(x){B.cell.add('sig',x,2.2,-GT,.09,.14,.09);B.cell.add('sig',x,2.2,GT,.09,.14,.09)}); // signalizácia prejazdu
+ [[297,160,320,178],[297,182,320,200]].forEach(function(r){                                                  // pôvodné rozvádzače podľa pôdorysu
+  var xc=(wx(r[0])+wx(r[2]))/2,zc=(wz(r[1])+wz(r[3]))/2,w=wx(r[2])-wx(r[0])-.06,d=wz(r[3])-wz(r[1])-.06;
+  B.cell.add('dark',xc,.05,zc,w-.04,.1,d-.04);B.cell.add('cover',xc,1.05,zc,w,1.9,d);B.cell.add('yel',xc+w/2+.003,1.5,zc,.006,.22,.22);B.cell.add('dark',xc+w/2+.004,1.05,zc+d*.3,.008,.14,.03)});
+ for(c=0;c<8;c++)for(r=0;r<3;r++)if(rn()<.68)unit(B.cell,wx(177+(c+.5)*14.75),0,wz(165+(r+.5)*18.3),.6,.8,.9,['box','box2','box3'][(c+r)%3]);          // čakajú na páskovanie
+ for(c=0;c<5;c++)for(r=0;r<4;r++)if(rn()<.6)unit(B.cell,wx(388+(c+.5)*14.8),0,wz(160+(r+.5)*16.25),.6,.8,.9,['box','box2','box3'][(c+r)%3],1);      // prepáskované
+ for(c=0;c<=8;c++)B.cell.add('line',wx(177+c*14.75),.004,wz(192.5),.04,.008,wz(220)-wz(165));
+ for(c=0;c<=5;c++)B.cell.add('line',wx(388+c*14.8),.004,wz(192.5),.04,.008,wz(225)-wz(160));
+ [[cxw-.012,-Math.PI/2],[cxe+.012,Math.PI/2]].forEach(function(q){                                           // bezpečnostné značky pri prejazdoch
+  var s=new THREE.Mesh(new THREE.PlaneGeometry(.5,.5),new THREE.MeshBasicMaterial({map:tex(128,128,function(g){g.fillStyle='#f2c200';g.fillRect(0,0,128,128);g.fillStyle='#111';g.beginPath();g.moveTo(64,14);g.lineTo(116,108);g.lineTo(12,108);g.closePath();g.fill();g.fillStyle='#f2c200';g.beginPath();g.moveTo(64,34);g.lineTo(98,98);g.lineTo(30,98);g.closePath();g.fill();g.fillStyle='#111';g.fillRect(60,52,8,28);g.fillRect(60,86,8,8)}),side:THREE.DoubleSide}));
+  s.rotation.y=q[1];s.position.set(q[0],1.5,GT+.6);G.cell.add(s)});
+ // servisná zóna na strane lyžín a odvíjačov
+ [[-1.6,-3.55,2,-3.55],[-1.6,-3.55,-1.6,-2.3],[2,-3.55,2,-2.3]].forEach(function(q){var ax=q[0]!==q[2];B.cell.add('route',(q[0]+q[2])/2,.004,(q[1]+q[3])/2,ax?q[2]-q[0]:.06,.008,ax?.06:q[3]-q[1])});
+ decal('SERVISNÁ ZÓNA',.2,-3.95,2.4,.36,'#2f7fd0',G.cell);
+
+ // ── trasa AMR: len vizuálna pomôcka, zhodná so skutočnou dráhou v simulácii ──
+ B.route.add('route',(WH.start+WH.end)/2,.004,0,WH.end-WH.start,.008,.1);
+ for(var ax=WH.start+1;ax<WH.end-.5;ax+=2)if(Math.abs(ax)>1.2&&Math.abs(ax-CX)>1.2)[-1,1].forEach(function(s){B.route.add('route',ax,.004,s*.2,.34,.008,.07,s*DIR*Math.PI/4)}); // šípky smeru
+ function frameMark(b,m,x,hw,hz){[-1,1].forEach(function(s){b.add(m,x,.005,s*hz,2*hw,.01,.07);b.add(m,x+s*hw,.005,0,.07,.01,2*hz)})}
+ frameMark(B.route,'ok',CX,.62,.62);frameMark(B.route,'hi',0,.62,.62);
+ [WH.start,WH.end].forEach(function(x){B.route.add('route',x,.005,0,.5,.01,.5)});
+ decal('KONTROLA QR',CX,1.25,1.5,.26,'#2f8f5b',G.route);decal('STOP · PÁSKOVANIE',0,1.42,2,.26,'#b97f00',G.route);
+ decal('PRÍJAZD',XIN+DIR*1.2,DIR>0?.75:1.55,1.2,.26,'#2f7fd0',G.route);decal('ODCHOD',XOUT-DIR*.2,DIR>0?1.55:.75,1.2,.26,'#2f7fd0',G.route);
+
+ // ── stavba: severná stena (viditeľná len zvnútra), stĺpy, strešná konštrukcia, LED svietidlá ──
+ function wall(x,z,len,ry){var m=new THREE.Mesh(new THREE.PlaneGeometry(len,HH+.9),M.wall);m.position.set(x,(HH+.9)/2,z);m.rotation.y=ry;G.walls.add(m)}
+ wall((fx0+fx1)/2,fz0,fx1-fx0,0);                                                                          // len severná stena; inde je výkres orezaný
+ [562,577].forEach(function(px){B.floor.add('line',wx(px),.004,(wz(182)+fz1)/2,.08,.008,fz1-wz(182))});       // dvojitá čiara z pôdorysu len ako značenie na podlahe, bez steny
+ for(c=0;c<10;c++)B.walls.add('conc',wx(86+c*WH.grid),HH/2,wz(27),.4,HH,.4);                                // fasádne stĺpy
+ WH.mainCols.forEach(function(q){B.walls.add('conc',wx(q[0]),HH/2,wz(q[1]),.55,HH,.55);B.walls.add('yel',wx(q[0]),.5,wz(q[1]),.62,1,.62)});
+ [27,395].forEach(function(py){B.roof.add('rackB',(fx0+fx1)/2,HH+.4,wz(py),fx1-fx0,.8,.35)});                // hlavné väzníky
+ for(c=0;c<10;c++){var bx=wx(86+c*WH.grid);
+  B.roof.add('shelf',bx,HH+.225,(fz0+fz1)/2,.18,.45,fz1-fz0);                                              // väznice
+  for(var lz=fz0+3;lz<fz1-1;lz+=5.6)B.roof.add('led',bx,HH-.06,lz,.12,.05,1.5);                              // LED svietidlá
+ }
+ B.roof.add('shelfB',(fx0+fx1)/2,HH-.8,fz0+.5,fx1-fx0-1,.06,.3);                                             // káblové žľaby
+ B.roof.add('shelfB',-.8,HH-.8,(fz0+.5-1.93)/2,.3,.06,-1.93-fz0-.5);
+ B.roof.add('shelfB',-.8,(HH-.8+1.45)/2,-1.93,.1,HH-.8-1.45,.05);
+ var rf=new THREE.Mesh(new THREE.PlaneGeometry(fx1-fx0,fz1-fz0),M.roofM);rf.rotation.x=Math.PI/2;rf.position.set((fx0+fx1)/2,HH+.9,(fz0+fz1)/2);G.roof.add(rf);
+ WH.doors.forEach(function(q){var xc=(wx(q[0])+wx(q[1]))/2,w=Math.max(.95,wx(q[1])-wx(q[0]));          // dvere v severnej stene
+  B.walls.add('dark',xc,1.09,fz0+.035,w+.14,2.18,.05);B.walls.add('shelfB',xc,1.05,fz0+.05,w,2.1,.05);
+  B.walls.add('dark',xc+w/2-.12,1.05,fz0+.085,.03,.14,.03);B.walls.add('sig0',xc,2.38,fz0+.04,.5,.16,.04)});
+ Object.keys(B).forEach(function(k){B[k].build()});
+
+ // viditeľnosť prostredia: voľby používateľa + skrytie prekážok podľa pohľadu
+ var ENV={store:true,walls:true,roof:true,route:true},curView='free',follow=false;
+ var HIDE={side:{store:1},plan:{roof:1},whole:{roof:1},top:{roof:1}};
+ function envUpd(){var h=HIDE[curView]||{};['store','walls','roof','route'].forEach(function(k){G[k].visible=ENV[k]&&!h[k]})}
+
+ var wcx=(fx0+fx1)/2,wcz=(fz0+fz1)/2;
+ // kamery: [poloha x,y,z, cieľ x,y,z]; pohľady z juhu by zakryli regály, preto sú volené zo severu, z východu alebo zhora
+ var VIEW={free:[5.8,2.6,1.9,-.6,1.3,-.1],machine:[3.4,2.7,-4.2,0,1.3,-.8],side:[0,2.1,7.4,0,1.5,0],front:[-9,2,0,0,1.4,0],top:[0,13,.01,0,0,0],
+  whole:[wcx-2,50,wcz+24,wcx,0,wcz-1],plan:[wcx,64,wcz+.01,wcx,0,wcz]};
+ return{
+  colors:colors,
+  rebuild:function(rels,n){
+   sealed.forEach(function(pr){pr.forEach(function(s){s.e.forEach(function(m){amr.remove(m)})})});sealed=[];
+   qrMesh.visible=(n===4);
+   rels.forEach(function(q){
+    var md=q[0],h=q[1];
+    sealed.push([1,-1].map(function(sg){var s=makeStrap(amr,md);s.upd(sg*h,1,0,W0[md],0);s.hide();return s}));
+   });
+  },
+  apply:function(st){
+   var ty=st.ty,xs=st.xs,on=st.on;
+   amr.position.x=st.ax;amr.rotation.y=st.ar;
+   sealed.forEach(function(pr,k){pr.forEach(function(s,j){if(k<st.sN){s.upd((j?-1:1)*rels[k][1],1,0,W0[rels[k][0]],0)}else s.hide()})});
+   var hc=st.hc,yt=hc+.44;
+   carr.position.y=hc;
+   // energetická reťaz: slučka so stálou dĺžkou
+   var yb=hc/2+.5,yf=2.9,yc=hc+.3;
+   ecF.scale.y=yf-yb;ecF.position.y=(yf+yb)/2;ecM.scale.y=yc-yb;ecM.position.y=(yc+yb)/2;ecB.position.y=yb;
+   [0,1].forEach(function(j){
+    if(on)act[j].upd(xs[j],st.off,st.ins,W0[st.md],st.insW);else act[j].hide();
+    cars[j].position.set(xs[j],hc,0);
+    flashes[j].position.set(xs[j],hc-.2,0);flashes[j].material.opacity=st.fo;flashes[j].scale.setScalar(st.fs||.01);
+    // prívod pásky k hlave
+    vrun[j].scale.y=yt-YP;vrun[j].position.y=(yt+YP)/2;
+    var x0=(j?-1:1)*SX,z0=-.85,z1=-.24,dx=xs[j]-x0,dz=z1-z0;
+    drun[j].position.set((x0+xs[j])/2,hc+.496,(z0+z1)/2);drun[j].scale.z=Math.hypot(dx,dz);drun[j].rotation.y=Math.atan2(dx,dz);
+    // lyžina: pevná dĺžka, posúva sa po vedení
+    var s=skids[j];s.g.position.x=xs[j];
+    s.bar.position.z=-st.tip-LL/2;s.drv.position.z=-st.tip-LL+.06;
+   });
+   scan.material.opacity=st.scanOp;
+   cone.material.opacity=st.coneOp;
+   // maják: zelená = pripravené, oranžová bliká počas páskovania
+   var busy=!st.fin&&st.tt>0,work=busy&&(on||ty==='dock');
+   M.sig.color.set(busy?0xc9302c:0x2fd08a);M.sig.emissive.set(busy?0xc9302c:0x2fd08a);          // prejazd: červená = pracovisko obsadené
+   M.lampG.emissiveIntensity=busy?.05:1;
+   M.lampA.emissiveIntensity=work?(Math.sin(st.tt*9)>0?1.3:.15):(busy?.6:.05);
+  },
+  draw:function(){
+   if(follow){var dx=amr.position.x-ctl.target.x;cam.position.x+=dx;ctl.target.x+=dx}   // kamera sleduje AMR
+   ctl.update();R.render(S,cam)},
+  env:function(f){for(var k in f)ENV[k]=f[k];envUpd()},
+  resize:function(w,h){R.setSize(w,h,false);cam.aspect=w/h;cam.updateProjectionMatrix()},
+  view:function(v){
+   curView=v;follow=(v==='follow');envUpd();
+   if(v==='user')return;                                                                 // voľná kamera: poloha sa nemení
+   if(follow){var ax=amr.position.x;cam.position.set(ax-4.2*DIR,3,-1.6);ctl.target.set(ax,.9,0);ctl.update();return}
+   var p=VIEW[v]||VIEW.free;cam.position.set(p[0],p[1],p[2]);ctl.target.set(p[3],p[4],p[5]);ctl.update();
+  }
+ };
+}
+var V3=null;
+try{V3=init3D()}catch(err){V3=null;if(window.console)console.warn('3D nie je dostupné, používa sa 2D:',err&&err.message)}
+
+// ───────────── 2D schéma (canvas 2D, bez WebGL) ─────────────
+var P2={},c2=cv2.getContext('2d'),sz={w:0,h:0,d:1};
+function pal2(){['panel','line','ink','mute','floor','amr','arch','head','pal','strap','box','box2','hi','ok','card'].forEach(function(k){P2[k]=cs('--'+k)})}
+function size2(){
+ var w=stage.clientWidth,h=stage.clientHeight,d=Math.min(window.devicePixelRatio||1,2);
+ if(sz.w!==w||sz.h!==h||sz.d!==d){sz={w:w,h:h,d:d};cv2.width=Math.round(w*d);cv2.height=Math.round(h*d)}
+ return sz;
+}
+// časti pásky v rovine (u = pozdĺž šírky, y = výška); rovnaká geometria ako v 3D
+function pathSegs(w,y1,y0,p){
+ var P=[[0,y1],[-w,y1],[-w,y0],[w,y0],[w,y1],[0,y1]],L=[],T=0,i,out=[];
+ for(i=0;i<5;i++){L[i]=Math.hypot(P[i+1][0]-P[i][0],P[i+1][1]-P[i][1]);T+=L[i]}
+ var d=p*T,c=0;
+ for(i=0;i<5;i++){
+  var f=Math.max(0,Math.min(1,(d-c)/L[i]));c+=L[i];
+  if(f>0){var a=P[i],b=P[i+1];out.push({i:i,a:a,b:[a[0]+(b[0]-a[0])*f,a[1]+(b[1]-a[1])*f]})}
+ }
+ return out;
+}
+function line(g,x0,y0,x1,y1){g.beginPath();g.moveTo(x0,y0);g.lineTo(x1,y1);g.stroke()}
+function label(g,txt,x,y,al){g.font='600 12px Barlow,system-ui,sans-serif';g.fillStyle=P2.mute;g.textAlign=al||'left';g.textBaseline='alphabetic';g.fillText(txt,x,y)}
+
+function drawTop(g,r,st){
+ g.save();g.beginPath();g.rect(r.x,r.y,r.w,r.h);g.clip();
+ var top=26,s=Math.min((r.w-16)/6.2,(r.h-top-10)/3.5);
+ var ox=r.x+r.w/2+.3*s,oy=r.y+top+(r.h-top)/2+.55*s;
+ function X(x){return ox+x*s}
+ function Z(z){return oy+z*s}
+ function rc(x,z,w,d){g.fillRect(X(x-w/2),Z(z-d/2),w*s,d*s)}
+ function rs(x,z,w,d){g.strokeRect(X(x-w/2),Z(z-d/2),w*s,d*s)}
+ var lw=Math.max(2,.035*s);
+ label(g,'Pôdorys (zhora)',r.x+12,r.y+18);
+ // podlaha: žltá vodiaca čiara
+ g.globalAlpha=.7;g.fillStyle=P2.hi;g.fillRect(r.x,Z(0)-1,r.w,2);g.globalAlpha=1;
+ // rozvádzač, podávače a kotúče pások
+ g.fillStyle='#cfd5d8';g.globalAlpha=.85;rc(-.7,-1.6,.45,.8);g.globalAlpha=1;
+ g.fillStyle='#1f3f8c';[[.65,-1.87],[1.35,-1.97]].forEach(function(q){rc(q[0],q[1],.08,.08)});
+ g.fillStyle='#8c969c';[[.65,-1.7],[1.35,-1.8]].forEach(function(q){rc(q[0],q[1],.6,.16)});
+ // rameno a kladka (vodiaci valec) na stĺpe zo strany kotúčov
+ g.fillStyle=P2.head;rc(0,-1.06,.04,.22);g.fillStyle='#8c969c';rc(0,-1.16,.04,.2);
+ // kamera QR
+ g.strokeStyle=P2.head;g.lineWidth=lw;line(g,X(CX),Z(.9),X(CX),Z(0));
+ g.fillStyle=P2.head;rc(CX,.9,.1,.1);
+ if(st.coneOp>0){g.fillStyle='#2fd08a';g.globalAlpha=Math.min(.6,st.coneOp*2.4);g.beginPath();g.arc(X(CX),Z(0),.3*s,0,6.2832);g.fill();g.globalAlpha=1}
+ g.fillStyle='#c9302c';g.beginPath();g.arc(X(CX),Z(0),Math.max(3,.05*s),0,6.2832);g.fill();
+ label(g,'QR kamera',X(CX),Z(1.08),'center');
+
+ // AMR + skejt + paleta + náklad (v lokálnej osi AMR)
+ g.save();g.translate(X(st.ax),Z(0));g.rotate(-st.ar);
+ function lr(x,z,w,d){g.fillRect((x-w/2)*s,(z-d/2)*s,w*s,d*s)}
+ function ls(x,z,w,d){g.strokeRect((x-w/2)*s,(z-d/2)*s,w*s,d*s)}
+ var A2=CFG.amr,K2=CFG.skate,L2=CFG.load,kx=K2.frameX/2-K2.beam/2,kz=K2.frameZ/2-K2.beam/2;
+ g.fillStyle='#d9dde0';lr(0,0,A2.L,A2.W);g.strokeStyle='#20262a';g.lineWidth=1.5;ls(0,0,A2.L,A2.W);
+ g.fillStyle='#2fd08a';lr(A2.L/2-.012,0,.02,.26);    // predok AMR
+ g.fillStyle='#8b959c';[-1,1].forEach(function(q){lr(q*kx,0,K2.beam,K2.frameZ);lr(0,q*kz,K2.frameX,K2.beam)}); // rám skejtu
+ g.fillStyle='#20262a';[[1,1],[1,-1],[-1,1],[-1,-1]].forEach(function(q){lr(q[0]*kx,q[1]*kz,K2.leg,K2.leg)});   // nohy
+ g.fillStyle=P2.pal;lr(0,0,CFG.pallet.X,CFG.pallet.Z);
+ for(var i=0;i<2;i++)for(var k=0;k<2;k++){
+  g.fillStyle=(i+k)%2?P2.box:P2.box2;lr((i-.5)*L2.bx,(k-.5)*L2.bz,L2.bx-L2.gap,L2.bz-L2.gap);
+  g.strokeStyle='rgba(0,0,0,.25)';g.lineWidth=1;ls((i-.5)*L2.bx,(k-.5)*L2.bz,L2.bx-L2.gap,L2.bz-L2.gap);
+ }
+ if(+$('n').value===4){  // QR kód na vrchu nákladu
+  g.fillStyle='#fff';lr(0,0,.2,.2);g.fillStyle='#111';
+  [[-.07,-.07],[.07,-.07],[-.07,.07]].forEach(function(p){lr(p[0],p[1],.05,.05)});
+  lr(.04,.04,.04,.04);lr(.075,.02,.025,.025);lr(0,.01,.03,.03);
+ }
+ // dokončené pásky (v lokálnej osi, otáčajú sa s paletou)
+ g.strokeStyle=P2.strap;g.lineWidth=lw;
+ for(var q=0;q<st.sN;q++){
+  var md=rels[q][0],hh=rels[q][1],w0=W0[md];
+  [1,-1].forEach(function(sg){
+   if(md==='A')line(g,sg*hh*s,-w0*s,sg*hh*s,w0*s);
+   else line(g,-w0*s,sg*hh*s,w0*s,sg*hh*s);
+  });
+ }
+ g.restore();
+ label(g,'AMR',X(st.ax-.62),Z(0)+4,'right');
+ if(st.coneOp>0){g.strokeStyle='#2fd08a';g.lineWidth=2.5;g.beginPath();g.arc(X(CX),Z(0),.3*s,0,6.2832);g.stroke()}
+
+ // oblúk stroja (stĺpy + horný nosník)
+ g.fillStyle=P2.arch;rc(0,-ZW,.1,.1);rc(0,ZW,.1,.1);
+ g.strokeStyle='#2a4fa0';g.lineWidth=1.5;g.globalAlpha=.8;rs(0,0,.14,2*ZW+.1);g.globalAlpha=1;
+
+ // lyžiny: puzdro a koľajnica vždy, vysunutá časť len keď je vonku
+ st.xs.forEach(function(x){
+  g.fillStyle='#2a4fa0';rc(x,-1.55,.16,1.2);rc(x,-1.25,.14,.4);
+  if(st.vis){g.fillStyle='#3d63c4';g.fillRect(X(x)-Math.max(2,.05*s)/2,Z(-BASE),Math.max(2,.05*s),(BASE-st.tip)*s)}
+ });
+ // aktívne pásky (od hláv, vidno vrchné časti, spodná je čiarkovaná)
+ if(st.on){
+  var w=st.w0+st.insW,segsA=pathSegs(w,Y1+st.ins,Y0,st.off);
+  g.strokeStyle=P2.strap;g.lineWidth=lw;
+  st.xs.forEach(function(x){
+   segsA.forEach(function(sg){
+    if(sg.i===1||sg.i===3)return;
+    if(sg.i===2)g.setLineDash([5,4]);
+    line(g,X(x),Z(sg.a[0]),X(x),Z(sg.b[0]));
+    g.setLineDash([]);
+   });
+  });
+ }
+ // hlavy (nad nákladom)
+ st.xs.forEach(function(x){
+  g.fillStyle='#eef1f3';rc(x,0,.18,.5);
+  g.strokeStyle=P2.head;g.lineWidth=1.5;rs(x,0,.18,.5);
+  g.fillStyle=P2.hi;rc(x,0,.1,.12);
+ });
+ // kóta rozteče hláv
+ var yd=Z(.56);g.strokeStyle=P2.mute;g.lineWidth=1;
+ line(g,X(st.xs[1]),yd,X(st.xs[0]),yd);line(g,X(st.xs[1]),yd-4,X(st.xs[1]),yd+4);line(g,X(st.xs[0]),yd-4,X(st.xs[0]),yd+4);
+ label(g,Math.round(st.sp*1000)+' mm',X(0),yd+14,'center');
+ label(g,'hlavy',X(.5),Z(-.3),'left');
+ label(g,'lyžiny',X(.3),Z(-1.05)+4,'left');
+ g.restore();
+}
+
+function drawFront(g,r,st){
+ g.save();g.beginPath();g.rect(r.x,r.y,r.w,r.h);g.clip();
+ var top=26,s=Math.min((r.w-16)/3.7,(r.h-top-12)/3.8);
+ var cx=r.x+r.w/2+.5*s,gy=r.y+r.h-12;
+ function Fz(z){return cx+z*s}
+ function Fy(y){return gy-y*s}
+ function rc(z0,y0,z1,y1){g.fillRect(Fz(z0),Fy(y1),(z1-z0)*s,(y1-y0)*s)}
+ var lw=Math.max(2,.035*s);
+ label(g,'Čelný pohľad (pozdĺž pohybu AMR)',r.x+12,r.y+18);
+ g.fillStyle=P2.floor;g.globalAlpha=.5;g.fillRect(r.x,gy,r.w,3);g.globalAlpha=1;
+ // rozvádzač, kotúč, kladka
+ g.fillStyle='#cfd5d8';g.globalAlpha=.85;rc(-2,0,-1.2,1.4);g.globalAlpha=1;
+ g.fillStyle='#8c969c';rc(-1.92,.02,-1.72,.62);
+ g.beginPath();g.arc(Fz(-1.16),Fy(.8),.1*s,0,6.2832);g.fill();
+ // oblúk
+ g.fillStyle=P2.arch;rc(-1,0,-.9,H);rc(.9,0,1,H);
+ g.fillStyle='#2a4fa0';rc(-1,H-.1,1,H+.1);rc(-1.15,0,-.85,.02);rc(.85,0,1.15,.02);
+ // vozík a hlavy
+ var hc=st.hc;
+ g.fillStyle=P2.head;rc(-ZW,hc+.26,ZW,hc+.38);
+ g.strokeStyle=P2.strap;g.lineWidth=lw;line(g,Fz(-.95),Fy(.8),Fz(-.95),Fy(hc+.3)); // zvislý beh pásky
+ if(!st.on&&st.h>.5){g.strokeStyle=P2.mute;g.lineWidth=1;g.globalAlpha=.7;g.strokeRect(Fz(-CH),Fy(Y1+.14),2*CH*s,(Y1+.14-Y0)*s);g.globalAlpha=1}
+ g.fillStyle='#eef1f3';rc(-.25,hc-.2,.25,hc+.2);
+ g.strokeStyle=P2.head;g.lineWidth=1.5;g.strokeRect(Fz(-.25),Fy(hc+.2),.5*s,.4*s);
+ g.fillStyle=P2.hi;rc(-.2,hc-.2,.2,hc-.17);
+ if(st.fo>0){g.fillStyle='#ffb62e';g.globalAlpha=st.fo;g.beginPath();g.arc(Fz(0),Fy(hc-.1),.08*st.fs*s,0,6.2832);g.fill();g.globalAlpha=1}
+
+ // AMR + skejt + paleta + náklad (priemet podľa otočenia)
+ var inSt=Math.abs(st.ax)<.9,sr=Math.abs(Math.sin(st.ar)),cr=Math.abs(Math.cos(st.ar));
+ function hw(a,b){return a*sr+b*cr}
+ g.globalAlpha=inSt?1:.18;
+ var A2=CFG.amr,K2=CFG.skate,L2=CFG.load,pX=CFG.pallet.X/2,pZ=CFG.pallet.Z/2;
+ g.fillStyle='#20262a';rc(-hw(A2.L/2,A2.W/2),.03,hw(A2.L/2,A2.W/2),.105);
+ g.fillStyle='#d9dde0';rc(-hw(A2.L/2,A2.W/2),.105,hw(A2.L/2,A2.W/2),A2.H);
+ g.fillStyle='#8b959c';rc(-.12,A2.H,.12,FT-K2.prof);                                   // zdvih a uchytenie skejtu
+ var lc=hw(K2.frameX/2-K2.beam/2,K2.frameZ/2-K2.beam/2);
+ [-1,1].forEach(function(q){g.fillStyle='#8b959c';rc(q*lc-K2.leg/2,K2.casterH,q*lc+K2.leg/2,FT-K2.prof);
+  g.fillStyle='#20262a';rc(q*lc-.04,0,q*lc+.04,K2.casterH)});                          // nohy a kolieska
+ g.fillStyle='#8b959c';rc(-hw(K2.frameX/2,K2.frameZ/2),FT-K2.prof,hw(K2.frameX/2,K2.frameZ/2),FT); // rám skejtu
+ g.fillStyle=P2.pal;rc(-hw(pX,pZ),PB,hw(pX,pZ),PB+CFG.pallet.board);rc(-hw(pX,pZ),PB+PH-2*CFG.pallet.board,hw(pX,pZ),PB+PH);
+ [-1,0,1].forEach(function(q){var c=q*hw(pX-.05,pZ-.05);rc(c-.05,PB,c+.05,PB+PH)});     // bloky palety, medzi nimi otvory
+ for(var j=0;j<L2.layers;j++){
+  g.fillStyle=j%2?P2.box:P2.box2;rc(-hw(pX,pZ),PB+PH+j*L2.bh+.003,hw(pX,pZ),PB+PH+(j+1)*L2.bh);
+ }
+ // dokončené pásky (priemet slučky do roviny y-z)
+ g.strokeStyle=P2.strap;g.lineWidth=lw;
+ var sgn=Math.sin(st.ar),cgn=Math.cos(st.ar);
+ for(var q=0;q<st.sN;q++){
+  var md=rels[q][0],hh=rels[q][1],w0=W0[md];
+  [1,-1].forEach(function(sg){
+   var wz,zo;
+   if(md==='A'){wz=w0*Math.abs(cgn);zo=-sg*hh*sgn}
+   else{wz=w0*Math.abs(sgn);zo=sg*hh*cgn}
+   g.strokeRect(Fz(zo-wz),Fy(Y1),2*wz*s,(Y1-Y0)*s);
+  });
+ }
+ g.globalAlpha=1;
+ // lyžiny
+ g.fillStyle='#2a4fa0';rc(-1.85,LY-.14,-1.04,LY-.02);rc(-1.34,0,-1.26,LY-.14);
+ if(st.vis){g.fillStyle='#3d63c4';rc(-BASE,LY-.01,-st.tip,LY+.01)}
+ // aktívna páska (od hláv)
+ if(st.on){
+  var w=st.w0+st.insW,sg2=pathSegs(w,Y1+st.ins,Y0,st.off);
+  g.strokeStyle=P2.strap;g.lineWidth=lw;
+  sg2.forEach(function(sg){line(g,Fz(sg.a[0]),Fy(sg.a[1]),Fz(sg.b[0]),Fy(sg.b[1]))});
+ }
+ if(!inSt)label(g,'AMR mimo stanice',Fz(0),Fy(.1)-8,'center');
+ label(g,'lyžina',Fz(-1.45),Fy(LY+.06),'center');
+ g.restore();
+}
+
+function draw2D(st){
+ if(!st)return;
+ var z=size2(),W=z.w,Hh=z.h,g=c2;
+ g.setTransform(z.d,0,0,z.d,0,0);
+ g.clearRect(0,0,W,Hh);g.fillStyle=P2.panel;g.fillRect(0,0,W,Hh);
+ var side=W/Hh>=1.4&&W>=620;
+ var A=side?{x:0,y:0,w:Math.round(W*.62),h:Hh}:{x:0,y:0,w:W,h:Math.round(Hh*.52)};
+ var B=side?{x:A.w,y:0,w:W-A.w,h:Hh}:{x:0,y:A.h,w:W,h:Hh-A.h};
+ drawTop(g,A,st);drawFront(g,B,st);
+ g.strokeStyle=P2.line;g.lineWidth=1;
+ if(side)line(g,B.x+.5,0,B.x+.5,Hh);else line(g,0,B.y+.5,W,B.y+.5);
+}
+
+// ───────────── riadenie ─────────────
+var mode2d=false;
+function resize(){
+ var w=stage.clientWidth,h=stage.clientHeight;
+ if(V3)V3.resize(w,h);
+ if(mode2d)draw2D(ST);
+}
+function setMode(v){
+ mode2d=(v==='2d')||!V3;
+ cv.style.display=mode2d?'none':'block';
+ cv2.style.display=mode2d?'block':'none';
+ stage.classList.toggle('m2d',mode2d);
+ $('hint').textContent=mode2d?(V3?'2D schéma pracoviska':'3D nie je dostupné, zobrazená 2D schéma pracoviska'):(v==='side'?'Bočný pohľad: sklad je skrytý, aby regály nezakrývali pracovisko · ':'')+'Ťahaj: otočiť · pravé tlačidlo: posun · koliesko: priblížiť';
+ resize();
+ if(!mode2d)V3.view(v);
+}
+function frame(now){
+ requestAnimationFrame(frame);
+ if(playing){
+  var dt=Math.min(.1,(now-last)/1000);t+=dt*(+$('spd').value);
+  if(t>=total){t=total;playing=false;$('go').textContent='Štart'}
+  render();
+ }
+ last=now;
+ if(mode2d)draw2D(ST);else V3.draw();
+}
+function reset(){
+ playing=false;t=0;lastKey=-1;build();$('go').textContent='Štart';render();
+ $('now').innerHTML='<b>Pripravené</b><span>Stlač Štart a AMR vojde do paskovacej stanice.</span>';chips(-1);lastKey=-1;
+}
+$('go').onclick=function(){
+ if(playing){playing=false;$('go').textContent='Pokračovať';return}
+ if(t>=total)reset();
+ playing=true;$('go').textContent='Pauza';
+};
+$('rs').onclick=reset;$('n').onchange=reset;$('cam').onchange=function(){setMode(this.value)};
+// viditeľnosť skladového prostredia
+var EK={eStore:'store',eWalls:'walls',eRoof:'roof',eRoute:'route'};
+function envSync(){var f={};Object.keys(EK).forEach(function(id){f[EK[id]]=$(id).checked});if(V3)V3.env(f)}
+Object.keys(EK).forEach(function(id){$(id).onchange=envSync});
+$('eCell').onclick=function(){$('eStore').checked=$('eWalls').checked=$('eRoof').checked=false;envSync()};
+$('eAll').onclick=function(){$('eStore').checked=$('eWalls').checked=$('eRoof').checked=$('eRoute').checked=true;envSync()};
+if(!V3)Array.prototype.forEach.call($('envRow').querySelectorAll('input,button'),function(e){e.disabled=true});
+addEventListener('resize',resize);
+matchMedia('(prefers-color-scheme: dark)').addEventListener('change',function(){pal2();if(V3)V3.colors()});
+pal2();if(V3)V3.colors();
+if(!V3){ // bez WebGL ostáva len 2D
+ var sel=$('cam');sel.value='2d';
+ Array.prototype.forEach.call(sel.options,function(o){if(o.value!=='2d')o.disabled=true});
+}
+reset();resize();setMode($('cam').value==='2d'?'2d':'free');
+requestAnimationFrame(frame);
+})();
+</script>
+</body>
+</html>
+
+</body></html>
